@@ -38,7 +38,7 @@ $ ngspice cell6T.cir
 #### Analysis of 6T cell
 
 ##### **-> SNM Calculation**  
-The best measure to quantify the stability of an SRAM bitcell during the read cycle and in hold state is the Static Noise Margin (SNM). The SNM is defined as the maximum amount of DC noise (VN) that can be tolerated by the cross-coupled inverter pair such that the bitcell retains its data. The read SNM is extracted from the read voltage transfer characteristics (VTC). The read VTC can be measured by sweeping the voltage at the data storage node Q (or QB) with both bitlines (BL, BLB) and wordline (WL) biased at VDD while monitoring the node voltage at QB (or Q). The write-ability of a SRAM bitcell can be gauged by the write SNM. The write SNM is extracted by a combination of read voltage transfer characteristics (VTC) and the write VTC.  
+To obtain the SNM graphically, a butterfly curve is first plotted. For the measurement of the butterfly curve, the feedback of the cross-coupled inverter is separated. Then, DC analysis is performed at node q and node qb. Butterfly curve is obtained by toggling the 𝑋 and 𝑌 axis of one of the VTC curves, and merging the two separate VTC plots together. Shown below are the simulated butterfly curves of SRAM in hold mode, read mode and write operation. 
 
 **1. Hold SNM**
 
@@ -68,7 +68,6 @@ $ ngspice writesnm.cir
 Fit the largest square and find the WNM.
 
 ##### **-> N-Curve**  
-Another attractive approach which N-curve contains information for both read stability and write stability. There is no need of mathematical manipulation on the measured data as N-curve directly provides the functional information of SRAM bitcell. N-curve contains information for both voltage and current. Thus, allowing a complete functional analysis of the SRAM bitcell stability for both read and write operations with only one N-curve.
 
 ```
 $ ngspice ncurve.cir
