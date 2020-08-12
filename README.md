@@ -56,7 +56,7 @@ Fit the largest square in the two loops and find the hold SNM.
 
 **2. Read SNM**
 
-!()(https://github.com/yash-k99/sram/blob/master/Diagrams/readsnm.PNG)
+![](https://github.com/yash-k99/sram/blob/master/Diagrams/readsnm.PNG)
 
 ```
 $ ngspice readsnm.cir
