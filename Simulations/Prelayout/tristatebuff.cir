@@ -1,0 +1,23 @@
+Tristate Buffer
+.include NMOS-180nm.lib
+.include PMOS-180nm.lib
+
+M1 3 in 0 0 CMOSN L=0.18u W=0.18u
+M2 3 in 1 1 CMOSP L=0.18u W=0.36u
+M3 4 3 0 0 CMOSN L=0.18u W=0.18u
+M4 4 3 1 1 CMOSP L=0.18u W=0.9u
+M5 out en 4 0 CMOSN L=0.18u W=0.18u
+M6 out enb 4 1 CMOSP L=0.18u W=0.9u
+Vdd 1 0 1.8v
+Vin in 0 pulse(0 1.8 0 60ps 60ps 0.5ns 1ns)
+Ven en 0 pulse(0 1.8 0 60ps 60ps 2ns 4ns)
+Venb enb 0 pulse(1.8 0 0 60ps 60ps 2ns 4ns)
+
+.tran 0.1p 10n
+.control 
+run  
+plot V(en) V(enb)
+plot V(in)
+plot V(out)
+.endc
+.end

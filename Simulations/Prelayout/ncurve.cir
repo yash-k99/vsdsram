@@ -1,0 +1,24 @@
+N-curve
+
+.include NMOS-180nm.lib
+.include PMOS-180nm.lib
+
+M1 bl wl Q 0 CMOSN L=0.18u W=0.36u
+M2 blb wl Qb 0 CMOSN L=0.18u W=0.36u
+M3 Q Qb 0 0 CMOSN L=0.18u W=0.72u
+M4 Qb Q 0 0 CMOSN L=0.18u W=0.72u
+M5 Q Qb 1 1 CMOSP L=0.18u W=0.36u
+M6 Qb Q 1 1 CMOSP L=0.18u W=0.36u
+
+Vdd 1 0 dc 1.8V
+Vin Q 0 dc 1.8V
+Vwl wl 0 dc 1.8v
+Vbl bl 0 dc 1.8v
+Vblb blb 0 dc 1.8v
+
+.dc Vin 0 1.8 0.01
+.control
+run
+plot -I(Vin)
+.endc
+.end

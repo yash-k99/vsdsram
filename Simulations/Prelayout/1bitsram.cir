@@ -1,0 +1,69 @@
+RAM
+.include NMOS-180nm.lib
+.include PMOS-180nm.lib
+
+*6T Cell
+M3 q qb vdd vdd CMOSP L=0.18u W=0.36u
+M4 q qb gnd gnd CMOSN L=0.18u W=0.72u
+M5 qb q vdd vdd CMOSP L=0.18u W=0.36u
+M6 qb q gnd gnd CMOSN L=0.18u W=0.72u
+M1 q wl bl gnd CMOSN L=0.18u W=0.36u
+M2 qb wl blb gnd CMOSN L=0.18u W=0.36u
+
+*Precharge
+M7 bl gnd vdd vdd CMOSP L=0.18u W=0.36u
+M8 blb gnd vdd vdd CMOSP L=0.18u W=0.36u
+
+.subckt inv ip op vdd gnd
+M1 op ip vdd vdd CMOSP L=0.18u W=0.36u
+M2 op ip gnd gnd CMOSN L=0.18u W=0.36u
+.ends inv
+
+*Sense Amplifier
+M9 dout1 bl 3 3 CMOSN L=0.18u W=0.36u
+M10 2 blb 3 3 CMOSN L=0.18u W=0.36u
+M11 dout1 2 vdd vdd CMOSP L=0.18u W=0.9u
+M12 2 2 vdd vdd CMOSP L=0.18u W=0.9u
+M13 3 rd_en gnd gnd CMOSN L=0.18u W=0.72u
+xinv dout1 dout vdd gnd inv
+
+
+*Write Driver
+.subckt nor2ip in1 in2 out vdd gnd
+M1 out in1 gnd gnd CMOSN L=0.18u W=0.36u
+M2 out in2 gnd gnd CMOSN L=0.18u W=0.36u
+M3 out in1 temp temp CMOSP L=0.18u W=0.36u
+M4 temp in2 vdd vdd CMOSP L=0.18u W=0.36u
+.ends nor2ip
+xinv1 din dinb vdd gnd inv
+xinv2 dinb dinbb vdd gnd inv
+xnor2ip1 wb dinb out1 vdd gnd nor2ip
+xnor2ip2 wb dinbb out2 vdd gnd nor2ip
+M16 blb out1 gnd gnd CMOSN L=0.18u W=0.9u
+M17 bl out2 gnd gnd CMOSN L=0.18u W=0.9u
+
+V1 vdd gnd dc 1.8V
+Vwl wl gnd pulse 0 1.8 0 60ps 60ps 5ns 10ns
+*Read Operation
+Vq q gnd pulse 0 1.8 0 60ps 60ps 1ns 2ns
+Vqb qb gnd pulse 1.8 0 0 60ps 60ps 1ns 2ns
+Vrd rd_en gnd pulse 0 1.8 0 60ps 60ps 5ns 10ns
+Vwb wb gnd dc 1.8V
+Vdin din gnd dc 0V
+
+*Write Operation 
+*Vwb wb gnd pulse 1.8 0 0 60ps 60ps 5ns 10ns
+*Vdin din gnd pulse 0 1.8 0 60ps 60ps 1ns 2ns 
+*Vrd rd_en gnd dc 0V
+
+.tran 0.1p 20n
+.control
+run
+plot V(rd_en) 
+plot V(dout)
+plot V(bl) V(blb)
+plot V(q) V(qb)
+plot V(wb)
+plot V(din)
+.endc
+.end

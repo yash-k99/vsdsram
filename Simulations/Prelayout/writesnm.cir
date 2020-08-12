@@ -1,0 +1,22 @@
+Write SNM Calculation
+
+.include NMOS-180nm.lib
+.include PMOS-180nm.lib
+
+M1 qb1 q1 0 0 CMOSN L=0.18u W=0.72u
+M2 qb1 q1 1 1 CMOSP L=0.18u W=0.36u
+M5 qb1 1 1 0 CMOSN L=0.18u W=0.36u
+Vdd 1 0 1.8V
+V1 q1 0 dc 1.8V
+
+M3 q2 qb2 0 0 CMOSN L=0.18u W=0.72u
+M4 q2 qb2 1 1 CMOSP L=0.18u W=0.36u
+M6 q2 1 0 0 CMOSN L=0.18u W=0.36u
+V2 qb2 0 dc 1.8V
+.dc V1 0 1.8 0.01 V2 0 1.8 0.01
+
+.control
+run
+plot V(qb1) vs V(q1) V(q2) vs V(qb2) 
+.endc
+.END

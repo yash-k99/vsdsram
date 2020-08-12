@@ -1,0 +1,41 @@
+Write Driver
+.include NMOS-180nm.lib
+.include PMOS-180nm.lib
+
+.subckt nor2ip in1 in2 out vdd gnd
+M1 out in1 gnd gnd CMOSN L=0.18u W=0.36u
+M2 out in2 gnd gnd CMOSN L=0.18u W=0.36u
+M3 out in1 temp temp CMOSP L=0.18u W=0.36u
+M4 temp in2 vdd vdd CMOSP L=0.18u W=0.36u
+.ends nor2ip
+
+.subckt inv ip op vdd gnd
+M1 op ip vdd vdd CMOSP L=0.18u W=0.36u
+M2 op ip gnd gnd CMOSN L=0.18u W=0.36u
+.ends inv
+
+.subckt driver bl blb wb din vdd gnd
+xinv1 din dinb vdd gnd inv
+xinv2 dinb dinbb vdd gnd inv
+xnor2ip1 wb dinb out1 vdd gnd nor2ip
+xnor2ip2 wb dinbb out2 vdd gnd nor2ip
+M1 blb out1 gnd gnd CMOSN L=0.18u W=0.36u
+M2 bl out2 gnd gnd CMOSN L=0.18u W=0.36u
+.ends driver
+
+M1 bl gnd vdd vdd CMOSP L=0.18u W=0.18u
+M2 blb gnd vdd vdd CMOSP L=0.18u W=0.18u
+
+V1 vdd gnd dc 1.8V
+V2 wb gnd pulse 0 1.8 0 60ps 60ps 2ns 4ns
+V3 din gnd pulse 0 1.8 0 60ps 60ps 0.5ns 1ns
+xdriver bl blb wb din vdd gnd driver
+
+.tran 0.1p 10n
+.control
+run
+plot V(wb)
+plot V(din)
+plot V(bl) V(blb)
+.endc
+.end 
