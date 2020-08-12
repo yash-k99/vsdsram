@@ -18,6 +18,9 @@ $  cd sram/Simulation/Prelayout
 ```
 
 ### 1. 6T Cell
+
+![](https://github.com/yash-k99/sram/blob/master/Diagrams/6Tcell.png)
+
 **-> Read Operation**  
 
 ```
@@ -42,6 +45,8 @@ To obtain the SNM graphically, a butterfly curve is first plotted. For the measu
 
 **1. Hold SNM**
 
+![](https://github.com/yash-k99/sram/blob/master/Diagrams/holdsnm.PNG)
+
 ```
 $ ngspice holdsnm.cir
 ```
@@ -50,6 +55,8 @@ $ ngspice holdsnm.cir
 Fit the largest square in the two loops and find the hold SNM.
 
 **2. Read SNM**
+
+!()(https://github.com/yash-k99/sram/blob/master/Diagrams/readsnm.PNG)
 
 ```
 $ ngspice readsnm.cir
@@ -60,6 +67,8 @@ Fit the largest square in the two loops and find the hold SNM.
 
 **3. Write SNM**
 
+![](https://github.com/yash-k99/sram/blob/master/Diagrams/writesnm.PNG)
+
 ```
 $ ngspice writesnm.cir
 ```
@@ -68,6 +77,8 @@ $ ngspice writesnm.cir
 Fit the largest square and find the WNM.
 
 ##### **-> N-Curve**  
+
+![](https://github.com/yash-k99/sram/blob/master/Diagrams/ncurve.PNG)
 
 ```
 $ ngspice ncurve.cir
@@ -82,6 +93,8 @@ Write Trip Current (WTI) -> Pt D
 
 ### 2. Sense Amplifier
 
+![](https://github.com/yash-k99/sram/blob/master/Diagrams/senseamp.PNG)
+
 Run the netlist file using the following command:
 
 ``` 
@@ -91,6 +104,8 @@ $ ngspice senseamp.cir
 ![](https://github.com/yash-k99/sram/blob/master/Waveforms/senseamp.PNG)
 
 ### 3. Write Driver
+
+![](https://github.com/yash-k99/sram/blob/master/Diagrams/writedriver.PNG)
 
 Run the netlist file using the following command:
 
@@ -102,6 +117,8 @@ $ ngspice writedriver.cir
 
 ### 4. Tristate Buffer
 
+![](https://github.com/yash-k99/sram/blob/master/Diagrams/tristate.PNG)
+
 Run the netlist file using the following command:
 
 ```
@@ -111,6 +128,8 @@ $ ngspice tristatebuff.cir
 ![](https://github.com/yash-k99/sram/blob/master/Waveforms/tristate.PNG)
 
 ### 5. Positive Edge Triggered DFF
+
+![](https://github.com/yash-k99/sram/blob/master/Diagrams/dff.PNG)
 
 Run the netlist file using the following command:
 
