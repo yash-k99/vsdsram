@@ -56,7 +56,7 @@ Fit the largest square in the two loops and find the hold SNM.
 
 **2. Read SNM**
 
-![](https://github.com/yash-k99/sram/blob/master/Diagrams/readsnm.PNG)
+![](https://github.com/yash-k99/sram/blob/master/Diagrams/readsnm.png)
 
 ```
 $ ngspice readsnm.cir
@@ -78,7 +78,7 @@ Fit the largest square and find the WNM.
 
 ##### **-> N-Curve**  
 
-![](https://github.com/yash-k99/sram/blob/master/Diagrams/ncurve.PNG)
+![](https://github.com/yash-k99/sram/blob/master/Diagrams/ncurve.png)
 
 ```
 $ ngspice ncurve.cir
@@ -93,7 +93,7 @@ Write Trip Current (WTI) -> Pt D
 
 ### 2. Sense Amplifier
 
-![](https://github.com/yash-k99/sram/blob/master/Diagrams/senseamp.PNG)
+![](https://github.com/yash-k99/sram/blob/master/Diagrams/senseamp.png)
 
 Run the netlist file using the following command:
 
@@ -117,7 +117,7 @@ $ ngspice writedriver.cir
 
 ### 4. Tristate Buffer
 
-![](https://github.com/yash-k99/sram/blob/master/Diagrams/tristate.PNG)
+![](https://github.com/yash-k99/sram/blob/master/Diagrams/tristate.png)
 
 Run the netlist file using the following command:
 
@@ -129,7 +129,7 @@ $ ngspice tristatebuff.cir
 
 ### 5. Positive Edge Triggered DFF
 
-![](https://github.com/yash-k99/sram/blob/master/Diagrams/dff.PNG)
+![](https://github.com/yash-k99/sram/blob/master/Diagrams/dff.png)
 
 Run the netlist file using the following command:
 
