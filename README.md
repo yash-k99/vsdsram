@@ -13,8 +13,8 @@ This project aims to develop a 1024 *32 (4kB) SRAM with supply voltage 1.8V and 
 To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal.  
 ```
 $  sudo apt install -y git
-$  git clone https://github.com/yash-k33/sram
-$  cd sram/Simulation/Prelayout
+$  git clone https://github.com/yash-k33/vsdsram
+$  cd vsdsram/Simulation/Prelayout
 ```
 
 ### 1. 6T Cell
