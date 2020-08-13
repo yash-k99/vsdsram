@@ -24,16 +24,15 @@ $  cd sram/Simulation/Prelayout
 **-> Read Operation**  
 
 ```
-$ ngspice cell6T.cir
+$ ngspice cell6T_read.cir
 ```
 
 ![](https://github.com/yash-k99/sram/blob/master/Waveforms/cell_read.PNG)
 
 **-> Write Operation**
-
-Open the cell6T.cir file. Comment the Read Operation commands and uncomment the write operation commands. Then run the following command:  
+  
 ```
-$ ngspice cell6T.cir
+$ ngspice cell6T_write.cir
 ```
 
 ![](https://github.com/yash-k99/sram/blob/master/Waveforms/cell_write.PNG)
@@ -145,15 +144,15 @@ $ ngspice dff.cir
 **-> Read Operation**
 
 ```
-$ ngspice 1bitsram.cir
+$ ngspice 1bitsram_read.cir
 ```
 
 ![](https://github.com/yash-k99/sram/blob/master/Waveforms/1bit_read.PNG)
 
 **-> Write Operation**  
-Open the 1bitsram.cir file. Comment out the read operation commands and uncomment the write operation command  
+  
 ```
-$ ngspice 1bitsram.cir
+$ ngspice 1bitsram_write.cir
 ```
 
 ![](https://github.com/yash-k99/sram/blob/master/Waveforms/1bit_write.PNG)
