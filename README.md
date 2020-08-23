@@ -9,7 +9,7 @@ This project aims to develop a 1024 *32 (4kB) SRAM with supply voltage 1.8V and 
 * Tristate Buffer  
 * D-Flip Flop  
 
-## Prelayout Simulations  
+# Prelayout Simulations  
 To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal.  
 ```
 $  sudo apt install -y git
@@ -156,6 +156,61 @@ $ ngspice 1bitsram_write.cir
 ```
 
 ![](https://github.com/yash-k99/sram/blob/master/Waveforms/Prelayout/1bit_write.PNG)
+
+# Postlayout Simulations
+
+  
+```
+$  cd vsdsram/Simulation/Postlayout
+```
+
+### 1. 6T Cell
+
+**-> Read Operation**  
+
+```
+$ ngspice cell6T_read.spice
+```
+
+![](https://github.com/yash-k99/vsdsram/blob/master/Waveforms/Postlayout/cell_read.PNG)
+
+**-> Write Operation**
+  
+```
+$ ngspice cell6T_write.spice
+```
+
+![](https://github.com/yash-k99/vsdsram/blob/master/Waveforms/Postlayout/cell_write.PNG)
+
+### 2. Sense Amplifier
+
+Run the netlist file using the following command:
+
+``` 
+$ ngspice senseamp.spice
+```
+
+![](https://github.com/yash-k99/sram/blob/master/Waveforms/Postlayout/senseamp.PNG)
+
+### 3. Write Driver
+
+Run the netlist file using the following command:
+
+```
+$ ngspice writedriver.spice
+```
+
+![](https://github.com/yash-k99/sram/blob/master/Waveforms/Postlayout/writedriver.PNG)
+
+### 4. Tristate Buffer
+
+Run the netlist file using the following command:
+
+```
+$ ngspice tri.spice
+```
+
+![](https://github.com/yash-k99/sram/blob/master/Waveforms/Postlayout/tristate.PNG)
 
 # Author
 Yash Kumar
