@@ -1,0 +1,111 @@
+magic
+tech scmos
+timestamp 1598105618
+<< ntransistor >>
+rect 43 -42 45 -38
+rect 61 -50 63 -46
+<< ndiffusion >>
+rect 42 -42 43 -38
+rect 45 -42 46 -38
+rect 60 -50 61 -46
+rect 63 -50 64 -46
+<< ndcontact >>
+rect 38 -42 42 -38
+rect 46 -42 50 -38
+rect 56 -50 60 -46
+rect 64 -50 68 -46
+<< polysilicon >>
+rect 30 -14 33 -12
+rect 65 -31 72 -29
+rect 43 -38 45 -35
+rect 43 -44 45 -42
+rect 61 -46 63 -43
+rect 104 -48 111 -46
+rect 61 -52 63 -50
+<< polycontact >>
+rect 26 -15 30 -11
+rect 42 -35 46 -31
+rect 60 -43 64 -39
+rect 111 -48 115 -44
+<< metal1 >>
+rect -9 15 0 18
+rect 24 14 68 17
+rect 27 -11 30 14
+rect 92 13 114 16
+rect 100 -13 104 6
+rect 65 -20 69 -16
+rect 37 -28 39 -24
+rect 66 -32 69 -20
+rect 46 -35 69 -32
+rect 104 -37 108 -33
+rect 37 -42 38 -38
+rect 46 -43 50 -42
+rect 64 -43 75 -40
+rect 47 -57 50 -43
+rect 57 -53 60 -50
+rect 64 -51 68 -50
+rect 72 -49 75 -43
+rect 105 -49 108 -37
+rect 111 -44 114 13
+rect 64 -57 67 -51
+rect 72 -52 108 -49
+<< m2contact >>
+rect -5 32 0 36
+rect 24 32 28 36
+rect 64 31 68 35
+rect 92 31 96 35
+rect 19 0 23 4
+rect 53 4 57 8
+rect 100 6 104 10
+rect 92 -1 96 3
+rect 33 -28 37 -24
+rect 33 -42 37 -38
+rect 56 -57 60 -53
+rect 78 -45 82 -41
+rect 37 -78 41 -74
+<< metal2 >>
+rect 28 35 68 36
+rect 28 32 64 35
+rect -5 -74 -1 32
+rect 53 8 57 32
+rect 96 31 104 35
+rect 100 10 104 31
+rect 23 0 24 4
+rect 19 -24 24 0
+rect 96 -1 120 3
+rect 19 -28 33 -24
+rect 37 -28 43 -24
+rect 33 -38 37 -28
+rect 37 -42 42 -38
+rect 33 -53 37 -42
+rect 78 -53 82 -45
+rect 116 -53 120 -1
+rect 33 -57 56 -53
+rect 60 -57 120 -53
+rect -5 -78 37 -74
+use inv  inv_0
+timestamp 1598077130
+transform 1 0 9 0 1 21
+box -9 -21 15 18
+use nor  nor_0
+timestamp 1598079838
+transform 1 0 46 0 1 -4
+box -13 -27 19 15
+use inv  inv_1
+timestamp 1598077130
+transform 1 0 77 0 1 20
+box -9 -21 15 18
+use nor  nor_1
+timestamp 1598079838
+transform 1 0 85 0 1 -21
+box -13 -27 19 15
+use precharge  precharge_0
+timestamp 1598083404
+transform -1 0 68 0 -1 -67
+box -13 -10 27 14
+<< labels >>
+rlabel metal1 -8 16 -8 16 3 din
+rlabel polysilicon 70 -30 70 -30 1 wb
+rlabel metal1 48 -52 48 -52 1 blb
+rlabel metal1 65 -52 65 -52 1 bl
+<< end >>

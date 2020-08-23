@@ -1,0 +1,8 @@
+* SPICE3 file created from precharge.ext - technology: scmos
+
+.option scale=0.1u
+
+M1000 bl gnd vdd vdd pfet w=3 l=2
++  ad=19 pd=18 as=38 ps=36
+M1001 blb gnd vdd vdd pfet w=3 l=2
++  ad=19 pd=18 as=0 ps=0

@@ -1,0 +1,24 @@
+Sense Amplifier
+.include osu018.lib
+
+M1 out bl 3 gnd nfet L=0.2u W=0.3u
+M2 2 blb 3 gnd nfet L=0.2u W=0.3u
+M3 out 2 vdd vdd pfet L=0.2u W=1u
+M4 2 2 vdd vdd pfet L=0.2u W=0.3u
+M5 3 rd_en gnd gnd nfet L=0.2u W=1u
+M6 dout out vdd vdd pfet L=0.2u W=0.3u
+M7 dout out gnd gnd nfet L=0.2u W=0.3u 
+
+V1 vdd gnd dc 1.8v
+V2 blb 0 pulse 1.8 0 0 60ps 60ps 1ns 2ns
+V3 bl 0 pulse 0 1.8 0 60ps 60ps 1ns 2ns
+V4 rd_en 0 pulse 0 1.8 0 60ps 60ps 5ns 10ns
+
+.tran 0.1p 20n
+.control
+run
+plot V(rd_en)
+plot V(bl) V(blb)
+plot V(dout) 
+.endc
+.end

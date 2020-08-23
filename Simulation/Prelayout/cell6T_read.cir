@@ -1,22 +1,19 @@
 6T SRAM Cell
 
-.include NMOS-180nm.lib
-.include PMOS-180nm.lib
+.include osu018.lib
 
 *Access Transistors
-M1 bl wl q gnd CMOSN L=0.18u W=0.36u
-M2 blb wl qb gnd CMOSN L=0.18u W=0.36u
+M1 bl wl q gnd nfet L=0.2u W=0.4u
+M2 blb wl qb gnd nfet L=0.2u W=0.4u
 *Inverter 1
-M3 q qb vdd vdd CMOSP L=0.18u W=0.36u
-M4 q qb gnd gnd CMOSN L=0.18u W=0.72u
+M3 q qb vdd vdd pfet L=0.2u W=0.4u
+M4 q qb gnd gnd nfet L=0.2u W=0.8u
 *Inverter 2 
-M5 qb q vdd vdd CMOSP L=0.18u W=0.36u
-M6 qb q gnd gnd CMOSN L=0.18u W=0.72u
+M5 qb q vdd vdd pfet L=0.2u W=0.4u
+M6 qb q gnd gnd nfet L=0.2u W=0.8u
 
 V1 vdd gnd dc 1.8v
 Vwl wl gnd pulse 0 1.8 0 60ps 60ps 20ns 40ns
-
-*Read Operation
 Vq q gnd pulse 0 1.8 0 60ps 60ps 5ns 10ns
 Vqb qb gnd pulse 1.8 0 0 60ps 60ps 5ns 10ns
 

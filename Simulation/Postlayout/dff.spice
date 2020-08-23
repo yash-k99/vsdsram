@@ -1,0 +1,55 @@
+* SPICE3 file created from dff.ext - technology: scmos
+
+.option scale=0.1u
+
+M1000 1 clkb gnd gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1001 1 clk gnd gnd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1002 1 clk gnd gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1003 1 clkb gnd gnd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1004 4 clk gnd gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1005 4 clkb gnd gnd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 4 clkb gnd gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1007 4 clk gnd gnd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1008 gnd 1 gnd gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1009 gnd 1 vdd vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1010 gnd gnd gnd gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1011 gnd gnd vdd vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1012 Q 4 gnd gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1013 Q 4 vdd vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1014 gnd Q gnd gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1015 gnd Q vdd vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1016 clkb clk gnd gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1017 clkb clk vdd vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+C0 vdd 1 0.18fF
+C1 clkb clk 0.05fF
+C2 clk vdd 0.13fF
+C3 clkb vdd 0.15fF
+C4 vdd Q 0.24fF
+C5 clkb 4 0.09fF
+C6 vdd 4 0.18fF
+C7 4 Q 0.05fF
+C8 clkb 1 0.02fF
+C9 Q gnd 0.10fF
+C10 vdd gnd 1.37fF
+C11 4 gnd 0.16fF
+C12 clk gnd 0.96fF
+C13 1 gnd 0.29fF
+C14 clkb gnd 0.99fF

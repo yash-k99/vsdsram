@@ -1,17 +1,16 @@
 Write Driver
-.include NMOS-180nm.lib
-.include PMOS-180nm.lib
+.include osu018.lib
 
 .subckt nor2ip in1 in2 out vdd gnd
-M1 out in1 gnd gnd CMOSN L=0.18u W=0.36u
-M2 out in2 gnd gnd CMOSN L=0.18u W=0.36u
-M3 out in1 temp temp CMOSP L=0.18u W=0.36u
-M4 temp in2 vdd vdd CMOSP L=0.18u W=0.36u
+M1 out in1 gnd gnd nfet L=0.2u W=0.4u
+M2 out in2 gnd gnd nfet L=0.2u W=0.4u
+M3 out in1 temp vdd pfet L=0.2u W=0.4u
+M4 temp in2 vdd vdd pfet L=0.2u W=0.4u
 .ends nor2ip
 
 .subckt inv ip op vdd gnd
-M1 op ip vdd vdd CMOSP L=0.18u W=0.36u
-M2 op ip gnd gnd CMOSN L=0.18u W=0.36u
+M1 op ip vdd vdd pfet L=0.2u W=0.4u
+M2 op ip gnd gnd nfet L=0.2u W=0.4u
 .ends inv
 
 .subckt driver bl blb wb din vdd gnd
@@ -19,12 +18,12 @@ xinv1 din dinb vdd gnd inv
 xinv2 dinb dinbb vdd gnd inv
 xnor2ip1 wb dinb out1 vdd gnd nor2ip
 xnor2ip2 wb dinbb out2 vdd gnd nor2ip
-M1 blb out1 gnd gnd CMOSN L=0.18u W=0.36u
-M2 bl out2 gnd gnd CMOSN L=0.18u W=0.36u
+M1 blb out1 gnd gnd nfet L=0.2u W=0.4u
+M2 bl out2 gnd gnd nfet L=0.2u W=0.4u
 .ends driver
 
-M1 bl gnd vdd vdd CMOSP L=0.18u W=0.18u
-M2 blb gnd vdd vdd CMOSP L=0.18u W=0.18u
+M1 bl gnd vdd vdd pfet L=0.2u W=0.2u
+M2 blb gnd vdd vdd pfet L=0.2u W=0.2u
 
 V1 vdd gnd dc 1.8V
 V2 wb gnd pulse 0 1.8 0 60ps 60ps 2ns 4ns

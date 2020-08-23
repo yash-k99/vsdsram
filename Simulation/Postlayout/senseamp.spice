@@ -1,0 +1,18 @@
+* SPICE3 file created from senseamp.ext - technology: scmos
+
+.option scale=0.1u
+
+M1000 dout out vdd vdd pfet w=3 l=2
++  ad=19 pd=18 as=88 ps=66
+M1001 2 2 vdd vdd pfet w=3 l=2
++  ad=19 pd=18 as=0 ps=0
+M1002 out bl 3 gnd nfet w=3 l=2
++  ad=19 pd=18 as=88 ps=66
+M1003 out 2 vdd vdd pfet w=10 l=2
++  ad=50 pd=30 as=0 ps=0
+M1004 2 blb 3 gnd nfet w=3 l=2
++  ad=19 pd=18 as=0 ps=0
+M1005 3 rd_en gnd gnd nfet w=10 l=2
++  ad=0 pd=0 as=69 ps=48
+M1006 dout out gnd gnd nfet w=3 l=2
++  ad=19 pd=18 as=0 ps=0

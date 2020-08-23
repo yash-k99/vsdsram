@@ -1,0 +1,38 @@
+timestamp 1598076063
+version 8.2
+tech scmos
+style TSMC0.18um(tsmc18)from:t11b
+scale 1000 1 10
+resistclasses 6700 7500 929000 929000 1 7700 7700 80 80 80 70 70 40
+node "rd_en" 104 263.762 -9 -40 pc 0 0 0 0 0 0 0 0 0 0 62 62 0 0 44 30 0 0 0 0 0 0 0 0 0 0
+node "3" 70 115.44 -10 -17 ndc 88 66 0 0 0 0 0 0 0 0 0 0 0 0 144 88 0 0 0 0 0 0 0 0 0 0
+node "bl" 131 339.334 11 -24 p 0 0 0 0 0 0 0 0 0 0 76 76 0 0 40 28 0 0 0 0 0 0 0 0 0 0
+node "blb" 73 200.406 -9 -30 pc 0 0 0 0 0 0 0 0 0 0 54 50 0 0 44 30 0 0 0 0 0 0 0 0 0 0
+node "dout" 24 97.983 29 -16 ndif 19 18 19 18 0 0 0 0 0 0 0 0 0 0 104 60 0 0 0 0 0 0 0 0 0 0
+node "out" 129 191.147 13 -16 ndif 19 18 50 30 0 0 0 0 0 0 75 68 0 0 96 56 0 0 0 0 0 0 0 0 0 0
+node "2" 174 42.625 -5 -5 p 19 18 19 18 0 0 0 0 0 0 86 86 0 0 80 48 0 0 0 0 0 0 0 0 0 0
+node "vdd!" 2072 1149.12 -16 -7 nw 48 48 88 66 1512 166 0 0 0 0 0 0 0 0 288 152 0 0 0 0 0 0 0 0 0 0
+substrate "gnd!" 0 0 -2 -44 poc 69 48 32 32 0 0 0 0 0 0 0 0 0 0 252 134 0 0 0 0 0 0 0 0 0 0
+cap "bl" "2" 7.554
+cap "blb" "2" 7.554
+cap "out" "vdd!" 170.129
+cap "out" "3" 41.238
+cap "out" "bl" 11.331
+cap "rd_en" "blb" 104.74
+cap "3" "blb" 82.512
+cap "vdd!" "dout" 74.619
+cap "vdd!" "2" 272.479
+cap "3" "2" 137.46
+cap "bl" "dout" 41.238
+device mosfet nfet 3 -36 4 -35 2 10 "gnd!" "rd_en" 4 0 "gnd!" 10 0 "3" 10 0
+device mosfet nfet 27 -16 28 -15 2 3 "gnd!" "out" 4 0 "gnd!" 3 0 "dout" 3 0
+device mosfet nfet 11 -16 12 -15 2 3 "gnd!" "bl" 4 0 "3" 3 0 "out" 3 0
+device mosfet nfet -5 -16 -4 -15 2 3 "gnd!" "blb" 4 0 "3" 3 0 "2" 3 0
+device mosfet pfet 27 -1 28 0 2 3 "vdd!" "out" 4 0 "vdd!" 3 0 "dout" 3 0
+device mosfet pfet 11 -1 12 0 2 10 "vdd!" "2" 4 0 "vdd!" 10 0 "out" 10 0
+device mosfet pfet -5 -1 -4 0 2 3 "vdd!" "2" 4 0 "vdd!" 3 0 "2" 3 0
+subcap "rd_en" -83.542
+subcap "bl" -69.796
+subcap "blb" -11.682
+subcap "dout" -52.92
+subcap "out" -41.238

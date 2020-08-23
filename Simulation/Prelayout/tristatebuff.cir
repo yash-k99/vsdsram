@@ -1,0 +1,22 @@
+Tristate Buffer
+.include osu018.lib
+
+M1 inb in gnd gnd nfet L=0.2u W=0.4u
+M2 inb in vdd vdd pfet L=0.2u W=1.2u
+M3 2 inb vdd vdd pfet L=0.2u W=2u
+M4 out enb 2 2 pfet L=0.2u W=0.7u
+M5 out en 3 3 nfet L=0.2u W=0.4u
+M6 3 inb gnd gnd nfet L=0.2u W=2u
+
+V1 vdd gnd 1.8v
+Vin in 0 pulse(0 1.8 0 60ps 60ps 0.5ns 1ns)
+Ven en 0 pulse(0 1.8 0 60ps 60ps 2ns 4ns)
+Venb enb 0 pulse(1.8 0 0 60ps 60ps 2ns 4ns)
+.tran 0.1p 10n
+.control 
+run  
+plot V(en) V(enb)
+plot V(in)
+plot V(out)
+.endc
+.end

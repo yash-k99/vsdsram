@@ -1,15 +1,14 @@
 DFF
-.include NMOS-180nm.lib
-.include PMOS-180nm.lib
+.include osu018.lib
 
 .subckt tg out in pcontrol ncontrol
-M1 out pcontrol in in CMOSP L=0.18u W=0.35u
-M2 out ncontrol in in CMOSN L=0.18u W=0.35u
+M1 out pcontrol in in pfet L=0.2u W=0.4u
+M2 out ncontrol in in nfet L=0.2u W=0.4u
 .ends tg
 
 .subckt inv out in vdd gnd
-M3 out in vdd vdd CMOSP L=0.18u W=0.35u
-M4 out in gnd gnd CMOSN L=0.18u W=0.35u
+M3 out in vdd vdd pfet L=0.2u W=0.4u
+M4 out in gnd gnd nfet L=0.2u W=0.4u
 .ends inv
 
 .subckt dff D Q clk vdd gnd

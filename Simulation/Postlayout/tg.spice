@@ -1,0 +1,8 @@
+* SPICE3 file created from tg.ext - technology: scmos
+
+.option scale=0.1u
+
+M1000 out ncontrol in in nfet w=4 l=2
++  ad=20 pd=18 as=36 ps=34
+M1001 out pcontrol in in pfet w=4 l=2
++  ad=20 pd=18 as=36 ps=34
