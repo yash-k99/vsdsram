@@ -11,13 +11,13 @@ node "q" 220 730.305 -7 -50 ndc 60 44 20 18 0 0 0 0 0 0 96 96 0 0 318 202 0 0 0 
 node "qb" 236 571.487 -2 -31 p 60 44 20 18 0 0 0 0 0 0 104 104 0 0 323 210 0 0 0 0 0 0 0 0 0 0
 node "vdd!" 1854 638.4 -13 -6 nw 32 32 40 36 840 122 0 0 0 0 0 0 0 0 144 80 0 0 0 0 0 0 0 0 0 0
 substrate "gnd!" 0 0 -7 -37 poc 80 52 32 32 0 0 0 0 0 0 0 0 0 0 144 80 0 0 0 0 0 0 0 0 0 0
-cap "bl" "q" 41.238
-cap "vdd!" "qb" 162.812
-cap "bl" "qb" 41.238
-cap "q" "qb" 255.282
+cap "qb" "bl" 41.238
+cap "q" "bl" 41.238
+cap "qb" "blb" 96.222
 cap "q" "vdd!" 221.723
-cap "blb" "qb" 96.222
+cap "vdd!" "qb" 162.812
 cap "bl" "wl" 16.876
+cap "q" "qb" 255.282
 device mosfet nfet 14 -50 15 -49 2 4 "gnd!" "wl" 4 0 "qb" 4 0 "blb" 4 0
 device mosfet nfet -2 -50 -1 -49 2 4 "gnd!" "wl" 4 0 "q" 4 0 "bl" 4 0
 device mosfet nfet 14 -29 15 -28 2 8 "gnd!" "q" 4 0 "gnd!" 8 0 "qb" 8 0

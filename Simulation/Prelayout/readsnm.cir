@@ -1,19 +1,17 @@
 Read SNM Calculation
 
-.include NMOS-180nm.lib
-.include PMOS-180nm.lib
+.include osu018.lib
 
-M1 qb1 q1 0 0 CMOSN L=0.18u W=0.72u
-M2 qb1 q1 1 1 CMOSP L=0.18u W=0.36u
-M5 qb1 1 1 0 CMOSN L=0.18u W=0.36u
-Vdd 1 0 1.8V
-V1 q1 0 dc 1.8V
-
-M3 q2 qb2 0 0 CMOSN L=0.18u W=0.72u
-M4 q2 qb2 1 1 CMOSP L=0.18u W=0.36u
-M6 q2 1 1 0 CMOSN L=0.18u W=0.36u
-V2 qb2 0 dc 1.8V
-.dc V1 0 1.8 0.01 V2 0 1.8 0.01
+M1 qb1 q1 gnd gnd nfet L=0.2u W=0.8u
+M2 qb1 q1 vdd vdd pfet L=0.2u W=0.4u
+M5 qb1 vdd vdd gnd nfet L=0.2u W=0.4u
+M3 q2 qb2 gnd gnd nfet L=0.2u W=0.8u
+M4 q2 qb2 vdd vdd pfet L=0.2u W=0.4u
+M6 q2 vdd vdd gnd nfet L=0.2u W=0.4u
+V1 vdd gnd 1.8V
+V2 q1 gnd dc 1.8V
+V3 qb2 gnd dc 1.8V
+.dc V2 0 1.8 0.01 V3 0 1.8 0.01
 
 .control
 run

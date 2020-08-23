@@ -1,5 +1,4 @@
 BSIM3 Model (Supports: v3.2, v3.2.2, v3.2.3, v3.2.4)
 Parameter Checking.
-Model = nfet
-W = 4e-07, L = 2e-07, M = 1
-Warning: Ps = 0 is less than W.
+Model = pfet
+W = 7e-07, L = 2e-07, M = 1

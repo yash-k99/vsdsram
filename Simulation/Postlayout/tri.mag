@@ -1,0 +1,100 @@
+magic
+tech scmos
+timestamp 1598166292
+<< nwell >>
+rect -1053 13 -1001 51
+<< ntransistor >>
+rect -1042 3 -1040 7
+rect -1026 -13 -1024 7
+rect -1014 3 -1012 7
+<< ptransistor >>
+rect -1042 19 -1040 31
+rect -1026 19 -1024 39
+rect -1014 19 -1012 26
+<< ndiffusion >>
+rect -1043 3 -1042 7
+rect -1040 3 -1039 7
+rect -1031 -9 -1026 7
+rect -1027 -13 -1026 -9
+rect -1024 3 -1023 7
+rect -1015 3 -1014 7
+rect -1012 3 -1011 7
+rect -1024 -13 -1019 3
+<< pdiffusion >>
+rect -1027 35 -1026 39
+rect -1043 27 -1042 31
+rect -1047 19 -1042 27
+rect -1040 23 -1035 31
+rect -1040 19 -1039 23
+rect -1031 19 -1026 35
+rect -1024 26 -1019 39
+rect -1024 23 -1014 26
+rect -1024 19 -1023 23
+rect -1015 19 -1014 23
+rect -1012 23 -1007 26
+rect -1012 19 -1011 23
+<< ndcontact >>
+rect -1047 3 -1043 7
+rect -1039 3 -1035 7
+rect -1031 -13 -1027 -9
+rect -1023 3 -1015 7
+rect -1011 3 -1007 7
+<< pdcontact >>
+rect -1031 35 -1027 39
+rect -1047 27 -1043 31
+rect -1039 19 -1035 23
+rect -1023 19 -1015 23
+rect -1011 19 -1007 23
+<< psubstratepcontact >>
+rect -1047 -21 -1043 -17
+rect -1031 -21 -1027 -17
+<< nsubstratencontact >>
+rect -1031 43 -1027 47
+rect -1047 35 -1043 39
+<< polysilicon >>
+rect -1026 39 -1024 41
+rect -1042 31 -1040 33
+rect -1014 26 -1012 31
+rect -1042 7 -1040 19
+rect -1026 11 -1024 19
+rect -1014 17 -1012 19
+rect -1031 9 -1024 11
+rect -1026 7 -1024 9
+rect -1014 7 -1012 9
+rect -1042 1 -1040 3
+rect -1014 0 -1012 3
+rect -1026 -15 -1024 -13
+<< polycontact >>
+rect -1012 28 -1008 32
+rect -1046 10 -1042 14
+rect -1035 9 -1031 13
+rect -1014 -4 -1010 0
+<< metal1 >>
+rect -1053 48 -1001 51
+rect -1047 39 -1043 48
+rect -1031 47 -1027 48
+rect -1031 39 -1027 43
+rect -1047 31 -1043 35
+rect -1008 28 -1001 31
+rect -1053 10 -1046 13
+rect -1039 7 -1035 19
+rect -1011 12 -1007 19
+rect -1011 8 -1001 12
+rect -1011 7 -1007 8
+rect -1047 -17 -1043 3
+rect -1010 -3 -1001 0
+rect -1031 -17 -1027 -13
+rect -1053 -21 -1047 -17
+rect -1043 -21 -1031 -17
+rect -1027 -21 -1000 -17
+<< labels >>
+rlabel metal1 -1029 49 -1029 49 5 vdd!
+rlabel metal1 -1023 -19 -1023 -19 1 gnd!
+rlabel metal1 -1050 12 -1050 12 3 in
+rlabel metal1 -1037 11 -1037 11 1 inb
+rlabel pdcontact -1019 22 -1019 22 1 2
+rlabel ndcontact -1019 6 -1019 6 1 3
+rlabel metal1 -1005 -2 -1005 -2 7 en
+rlabel metal1 -1004 30 -1004 30 7 enb
+rlabel metal1 -1004 10 -1004 10 7 out
+<< end >>

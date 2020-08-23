@@ -1,20 +1,19 @@
 N-curve
 
-.include NMOS-180nm.lib
-.include PMOS-180nm.lib
+.include osu018.lib
 
-M1 bl wl Q 0 CMOSN L=0.18u W=0.36u
-M2 blb wl Qb 0 CMOSN L=0.18u W=0.36u
-M3 Q Qb 0 0 CMOSN L=0.18u W=0.72u
-M4 Qb Q 0 0 CMOSN L=0.18u W=0.72u
-M5 Q Qb 1 1 CMOSP L=0.18u W=0.36u
-M6 Qb Q 1 1 CMOSP L=0.18u W=0.36u
+M1 bl wl Q gnd nfet L=0.2u W=0.4u
+M2 blb wl Qb gnd nfet L=0.2u W=0.4u
+M3 Q Qb gnd gnd nfet L=0.2u W=0.8u
+M4 Qb Q gnd gnd nfet L=0.2u W=0.8u
+M5 Q Qb vdd vdd pfet L=0.2u W=0.4u
+M6 Qb Q vdd vdd pfet L=0.2u W=0.4u
 
-Vdd 1 0 dc 1.8V
-Vin Q 0 dc 1.8V
-Vwl wl 0 dc 1.8v
-Vbl bl 0 dc 1.8v
-Vblb blb 0 dc 1.8v
+V1 vdd gnd dc 1.8V
+Vin Q gnd dc 1.8V
+Vwl wl gnd dc 1.8v
+Vbl bl gnd dc 1.8v
+Vblb blb gnd dc 1.8v
 
 .dc Vin 0 1.8 0.01
 .control

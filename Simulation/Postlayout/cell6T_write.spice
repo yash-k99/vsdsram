@@ -1,5 +1,5 @@
 * SPICE3 file created from cell6T.ext - technology: scmos
-
+.include osu018.lib
 .option scale=0.1u
 
 M1000 q qb vdd vdd pfet w=4 l=2
@@ -27,3 +27,16 @@ C9 wl gnd 0.21fF
 C10 q gnd 0.73fF
 C11 qb gnd 0.57fF
 C12 vdd gnd 0.64fF
+
+V1 vdd gnd dc 1.8v
+Vwl wl gnd pulse 0 1.8 0 60ps 60ps 20ns 40ns
+Vbl bl gnd pulse 0 1.8 0 60ps 60ps 5ns 10ns
+Vblb blb gnd pulse 1.8 0 0 60ps 60ps 5ns 10ns
+.tran 0.1n 100n 
+.control
+run
+plot V(wl)
+plot V(bl) V(blb)
+plot V(q) V(qb)
+.endc
+.end
