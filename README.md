@@ -27,7 +27,7 @@ $  cd vsdsram/Simulation/Prelayout
 $ ngspice cell6T_read.cir
 ```
 
-![](https://github.com/yash-k99/sram/blob/master/Waveforms/cell_read.PNG)
+![](https://github.com/yash-k99/vsdsram/blob/master/Waveforms/Prelayout/cell_read.PNG)
 
 **-> Write Operation**
   
@@ -35,7 +35,7 @@ $ ngspice cell6T_read.cir
 $ ngspice cell6T_write.cir
 ```
 
-![](https://github.com/yash-k99/sram/blob/master/Waveforms/cell_write.PNG)
+![](https://github.com/yash-k99/vsdsram/blob/master/Waveforms/Prelayout/cell_write.PNG)
 
 #### Analysis of 6T cell
 
@@ -50,7 +50,7 @@ To obtain the SNM graphically, a butterfly curve is first plotted. For the measu
 $ ngspice holdsnm.cir
 ```
 
-![](https://github.com/yash-k99/sram/blob/master/Waveforms/holdsnm.PNG)  
+![](https://github.com/yash-k99/sram/blob/master/Waveforms/Prelayout/holdsnm.PNG)  
 Fit the largest square in the two loops and find the hold SNM.
 
 **2. Read SNM**
@@ -61,7 +61,7 @@ Fit the largest square in the two loops and find the hold SNM.
 $ ngspice readsnm.cir
 ```
 
-![](https://github.com/yash-k99/sram/blob/master/Waveforms/readsnm.PNG)  
+![](https://github.com/yash-k99/sram/blob/master/Waveforms/Prelayout/readsnm.PNG)  
 Fit the largest square in the two loops and find the hold SNM.
 
 **3. Write SNM**
@@ -72,7 +72,7 @@ Fit the largest square in the two loops and find the hold SNM.
 $ ngspice writesnm.cir
 ```
 
-![](https://github.com/yash-k99/sram/blob/master/Waveforms/writesnm.PNG)  
+![](https://github.com/yash-k99/sram/blob/master/Waveforms/Prelayout/writesnm.PNG)  
 Fit the largest square and find the WNM.
 
 ##### **-> N-Curve**  
@@ -83,7 +83,7 @@ Fit the largest square and find the WNM.
 $ ngspice ncurve.cir
 ```
 
-![](https://github.com/yash-k99/sram/blob/master/Waveforms/ncurve.PNG)
+![](https://github.com/yash-k99/sram/blob/master/Waveforms/Prelayout/ncurve.PNG)
 Stability Metrics:    
 Static Voltage Noise Margin (SVNM) -> Difference between Pt C and Pt A  
 Static Current Noise Margin (SINM) -> Pt B  
@@ -100,7 +100,7 @@ Run the netlist file using the following command:
 $ ngspice senseamp.cir
 ```
 
-![](https://github.com/yash-k99/sram/blob/master/Waveforms/senseamp.PNG)
+![](https://github.com/yash-k99/sram/blob/master/Waveforms/Prelayout/senseamp.PNG)
 
 ### 3. Write Driver
 
@@ -112,7 +112,7 @@ Run the netlist file using the following command:
 $ ngspice writedriver.cir
 ```
 
-![](https://github.com/yash-k99/sram/blob/master/Waveforms/writedriver.PNG)
+![](https://github.com/yash-k99/sram/blob/master/Waveforms/Prelayout/writedriver.PNG)
 
 ### 4. Tristate Buffer
 
@@ -124,7 +124,7 @@ Run the netlist file using the following command:
 $ ngspice tristatebuff.cir
 ```
 
-![](https://github.com/yash-k99/sram/blob/master/Waveforms/tristate.PNG)
+![](https://github.com/yash-k99/sram/blob/master/Waveforms/Prelayout/tristate.PNG)
 
 ### 5. Positive Edge Triggered DFF
 
@@ -136,7 +136,7 @@ Run the netlist file using the following command:
 $ ngspice dff.cir
 ```
 
-![](https://github.com/yash-k99/sram/blob/master/Waveforms/dff.PNG)
+![](https://github.com/yash-k99/sram/blob/master/Waveforms/Prelayout/dff.PNG)
 
 ### 1-Bit SRAM  
 ![](https://github.com/yash-k99/sram/blob/master/Diagrams/1bitsram.PNG)
@@ -147,7 +147,7 @@ $ ngspice dff.cir
 $ ngspice 1bitsram_read.cir
 ```
 
-![](https://github.com/yash-k99/sram/blob/master/Waveforms/1bit_read.PNG)
+![](https://github.com/yash-k99/sram/blob/master/Waveforms/Prelayout/1bit_read.PNG)
 
 **-> Write Operation**  
   
@@ -155,7 +155,7 @@ $ ngspice 1bitsram_read.cir
 $ ngspice 1bitsram_write.cir
 ```
 
-![](https://github.com/yash-k99/sram/blob/master/Waveforms/1bit_write.PNG)
+![](https://github.com/yash-k99/sram/blob/master/Waveforms/Prelayout/1bit_write.PNG)
 
 # Author
 Yash Kumar
