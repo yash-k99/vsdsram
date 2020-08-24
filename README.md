@@ -212,6 +212,35 @@ $ ngspice tri.spice
 
 ![](https://github.com/yash-k99/sram/blob/master/Waveforms/Postlayout/tristate.PNG)
 
+### 5. Positive Edge Triggered DFF
+
+Run the netlist file using the following command:
+
+```
+$ ngspice dff.spice
+```
+
+![](https://github.com/yash-k99/sram/blob/master/Waveforms/Postlayout/dff.PNG)
+
+### 1-Bit SRAM  
+
+**-> Read Operation**
+
+```
+$ ngspice 1bitsram_read.spice
+```
+
+![](https://github.com/yash-k99/sram/blob/master/Waveforms/Postlayout/1bit_read.PNG)
+
+**-> Write Operation**  
+  
+```
+$ ngspice 1bitsram_write.spice
+```
+
+![](https://github.com/yash-k99/sram/blob/master/Waveforms/Postlayout/1bit_write.PNG)
+
+
 # Author
 Yash Kumar
 
