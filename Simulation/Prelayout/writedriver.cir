@@ -33,8 +33,6 @@ xdriver bl blb wb din vdd gnd driver
 .tran 0.1p 10n
 .control
 run
-plot V(wb)
-plot V(din)
-plot V(bl) V(blb)
+plot V(wb)+6 V(din)+4 V(bl)+2 V(blb)
 .endc
 .end 

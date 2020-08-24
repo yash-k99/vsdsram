@@ -1,97 +1,68 @@
-timestamp 1598188025
+timestamp 1598249029
 version 8.2
 tech scmos
 style TSMC0.18um(tsmc18)from:t11b
 scale 1000 1 10
 resistclasses 6700 7500 929000 929000 1 7700 7700 80 80 80 70 70 40
-node "a_124_n11#" 41 95.288 124 -11 pc 0 0 0 0 0 0 0 0 0 0 34 32 0 0 20 18 0 0 0 0 0 0 0 0 0 0
-node "a_10_n11#" 41 95.288 10 -11 pc 0 0 0 0 0 0 0 0 0 0 34 32 0 0 20 18 0 0 0 0 0 0 0 0 0 0
 node "5" 32 69.054 116 -16 ndif 36 26 36 26 0 0 0 0 0 0 0 0 0 0 80 48 0 0 0 0 0 0 0 0 0 0
-node "a_71_n16#" 30 32.268 71 -16 ndc 32 24 32 24 0 0 0 0 0 0 0 0 0 0 128 72 100 58 0 0 0 0 0 0 0 0
 node "3" 32 69.054 48 -16 ndif 36 26 36 26 0 0 0 0 0 0 0 0 0 0 80 48 0 0 0 0 0 0 0 0 0 0
 node "D" 29 32.268 3 -16 ndc 32 24 32 24 0 0 0 0 0 0 0 0 0 0 80 48 0 0 0 0 0 0 0 0 0 0
-node "clkb" 21 140.52 -6 -16 ndif 20 18 20 18 0 0 0 0 0 0 0 0 0 0 84 50 560 288 0 0 0 0 0 0 0 0
 node "Q" 141 232.796 100 -16 ndif 20 18 20 18 0 0 0 0 0 0 72 72 0 0 100 58 0 0 0 0 0 0 0 0 0 0
 node "4" 222 392.94 81 -16 ndif 64 48 64 48 0 0 0 0 0 0 72 72 0 0 212 122 200 108 0 0 0 0 0 0 0 0
-node "a_78_n6#" 41 13.696 78 -6 pc 0 0 0 0 0 0 0 0 0 0 34 32 0 0 20 18 0 0 0 0 0 0 0 0 0 0
-node "a_56_n6#" 41 13.696 56 -6 pc 0 0 0 0 0 0 0 0 0 0 34 32 0 0 20 18 0 0 0 0 0 0 0 0 0 0
+node "clkb" 242 353.39 -6 -16 ndif 20 18 20 18 0 0 0 0 0 0 138 130 0 0 164 122 576 296 0 0 0 0 0 0 0 0
 node "1" 222 391.524 13 -16 ndif 64 48 64 48 0 0 0 0 0 0 72 72 0 0 212 122 200 108 0 0 0 0 0 0 0 0
 node "clk" 1136 1538.72 -15 -9 pc 0 0 0 0 0 0 0 0 0 0 598 598 0 0 28 24 0 0 0 0 0 0 0 0 0 0
-node "2" 167 232.796 32 -16 ndif 20 18 20 18 0 0 0 0 0 0 108 96 0 0 120 76 0 0 0 0 0 0 0 0 0 0
+node "2" 245 265.064 32 -16 ndif 52 42 52 42 0 0 0 0 0 0 105 96 0 0 232 140 104 60 0 0 0 0 0 0 0 0
 node "vdd!" 6886 3061.73 -19 -6 nw 80 80 100 90 3772 374 0 0 0 0 0 0 0 0 678 408 0 0 0 0 0 0 0 0 0 0
 substrate "gnd!" 0 0 -13 -24 poc 100 90 80 80 0 0 0 0 0 0 0 0 0 0 698 418 0 0 0 0 0 0 0 0 0 0
-cap "clkb" "2" 56.223
-cap "clkb" "a_78_n6#" 16.524
-cap "3" "2" 64.8026
-cap "clk" "2" 6.47486
-cap "Q" "vdd!" 232.796
-cap "5" "a_124_n11#" 68.73
-cap "clk" "a_78_n6#" 11.331
-cap "4" "a_78_n6#" 68.73
-cap "clkb" "vdd!" 108.006
-cap "clkb" "a_71_n16#" 26.832
-cap "1" "2" 52.7626
-cap "a_56_n6#" "vdd!" 95.288
-cap "3" "vdd!" 69.054
-cap "clk" "vdd!" 488.677
 cap "Q" "5" 23.5646
-cap "4" "vdd!" 223.826
-cap "clkb" "5" 26.832
-cap "1" "vdd!" 223.826
-cap "1" "a_71_n16#" 206.19
-cap "4" "5" 11.818
-cap "clkb" "a_10_n11#" 26.42
-cap "D" "vdd!" 32.268
-cap "clk" "a_10_n11#" 17.8059
-cap "clkb" "a_124_n11#" 21.512
-cap "1" "a_10_n11#" 68.73
-cap "clk" "a_124_n11#" 17.8059
-cap "vdd!" "2" 434.993
-cap "4" "a_124_n11#" 72.674
-cap "a_71_n16#" "2" 23.22
-cap "a_78_n6#" "vdd!" 95.288
-cap "clkb" "Q" 56.223
-cap "a_71_n16#" "a_78_n6#" 68.73
-cap "D" "a_10_n11#" 68.73
-cap "Q" "clk" 6.47486
-cap "clkb" "a_56_n6#" 22.056
-cap "clkb" "3" 26.832
-cap "4" "Q" 52.7626
-cap "clkb" "clk" 27.492
-cap "a_71_n16#" "vdd!" 218.24
-cap "3" "a_56_n6#" 68.73
-cap "clk" "a_56_n6#" 11.331
-cap "clkb" "4" 356.088
-cap "5" "vdd!" 69.054
-cap "4" "clk" 6.47486
-cap "clkb" "1" 419.226
-cap "1" "a_56_n6#" 68.73
-cap "3" "1" 11.818
 cap "clk" "1" 12.6829
-cap "clkb" "D" 246.768
-cap "a_10_n11#" "vdd!" 13.696
-cap "a_124_n11#" "vdd!" 13.696
-device mosfet nfet 125 -16 126 -15 2 4 "gnd!" "a_124_n11#" 4 0 "5" 4 0 "4" 4 0
+cap "2" "clkb" 151.785
+cap "vdd!" "4" 223.826
+cap "clk" "clkb" 89.5427
+cap "vdd!" "Q" 232.796
+cap "vdd!" "D" 32.268
+cap "clk" "4" 6.47486
+cap "1" "clkb" 556.686
+cap "vdd!" "3" 69.054
+cap "clk" "Q" 6.47486
+cap "2" "3" 64.8026
+cap "vdd!" "5" 69.054
+cap "clkb" "4" 497.492
+cap "clkb" "Q" 56.223
+cap "1" "3" 11.818
+cap "clkb" "D" 315.498
+cap "4" "Q" 52.7626
+cap "vdd!" "2" 583.47
+cap "clkb" "3" 95.562
+cap "vdd!" "clk" 488.677
+cap "clkb" "5" 95.562
+cap "2" "clk" 6.47486
+cap "vdd!" "1" 223.826
+cap "4" "5" 11.818
+cap "2" "1" 258.953
+cap "vdd!" "clkb" 342.166
+device mosfet nfet 125 -16 126 -15 2 4 "gnd!" "clkb" 4 0 "5" 4 0 "4" 4 0
 device mosfet nfet 114 -16 115 -15 2 4 "gnd!" "Q" 4 0 "gnd!" 4 0 "5" 4 0
 device mosfet nfet 98 -16 99 -15 2 4 "gnd!" "4" 4 0 "gnd!" 4 0 "Q" 4 0
-device mosfet nfet 79 -16 80 -15 2 4 "gnd!" "clk" 4 0 "a_71_n16#" 4 0 "4" 4 0
+device mosfet nfet 79 -16 80 -15 2 4 "gnd!" "clk" 4 0 "2" 4 0 "4" 4 0
 device mosfet nfet 57 -16 58 -15 2 4 "gnd!" "clk" 4 0 "3" 4 0 "1" 4 0
 device mosfet nfet 46 -16 47 -15 2 4 "gnd!" "2" 4 0 "gnd!" 4 0 "3" 4 0
 device mosfet nfet 30 -16 31 -15 2 4 "gnd!" "1" 4 0 "gnd!" 4 0 "2" 4 0
-device mosfet nfet 11 -16 12 -15 2 4 "gnd!" "a_10_n11#" 4 0 "D" 4 0 "1" 4 0
+device mosfet nfet 11 -16 12 -15 2 4 "gnd!" "clkb" 4 0 "D" 4 0 "1" 4 0
 device mosfet nfet -8 -16 -7 -15 2 4 "gnd!" "clk" 4 0 "gnd!" 4 0 "clkb" 4 0
 device mosfet pfet 125 0 126 1 2 4 "vdd!" "clk" 4 0 "5" 4 0 "4" 4 0
 device mosfet pfet 114 0 115 1 2 4 "vdd!" "Q" 4 0 "vdd!" 4 0 "5" 4 0
 device mosfet pfet 98 0 99 1 2 4 "vdd!" "4" 4 0 "vdd!" 4 0 "Q" 4 0
-device mosfet pfet 79 0 80 1 2 4 "vdd!" "a_78_n6#" 4 0 "a_71_n16#" 4 0 "4" 4 0
-device mosfet pfet 57 0 58 1 2 4 "vdd!" "a_56_n6#" 4 0 "3" 4 0 "1" 4 0
+device mosfet pfet 79 0 80 1 2 4 "vdd!" "clkb" 4 0 "2" 4 0 "4" 4 0
+device mosfet pfet 57 0 58 1 2 4 "vdd!" "clkb" 4 0 "3" 4 0 "1" 4 0
 device mosfet pfet 46 0 47 1 2 4 "vdd!" "2" 4 0 "vdd!" 4 0 "3" 4 0
 device mosfet pfet 30 0 31 1 2 4 "vdd!" "1" 4 0 "vdd!" 4 0 "2" 4 0
 device mosfet pfet 11 0 12 1 2 4 "vdd!" "clk" 4 0 "D" 4 0 "1" 4 0
 device mosfet pfet -8 0 -7 1 2 4 "vdd!" "clk" 4 0 "vdd!" 4 0 "clkb" 4 0
 subcap "3" -32.886
-subcap "clkb" -79.359
+subcap "clkb" -202.039
 subcap "1" -206.781
 subcap "clk" -972.472
-subcap "2" -79.0895
+subcap "2" -109.685
 subcap "gnd!" -317.928

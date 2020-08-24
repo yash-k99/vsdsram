@@ -1,0 +1,132 @@
+* SPICE3 file created from 1bitsram.ext - technology: scmos
+.include osu018.lib
+.option scale=0.1u
+
+M1000 writedriver_0/inv_1/in din gnd gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1001 writedriver_0/inv_1/in din vdd vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1002 writedriver_0/inv_1/out writedriver_0/inv_1/in gnd gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1003 writedriver_0/inv_1/out writedriver_0/inv_1/in vdd vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1004 writedriver_0/nor_0/out wb gnd gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1005 writedriver_0/nor_0/temp writedriver_0/inv_1/in vdd vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 writedriver_0/nor_0/out wb writedriver_0/nor_0/temp vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1007 writedriver_0/nor_0/out writedriver_0/inv_1/in gnd gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1008 writedriver_0/nor_1/out writedriver_0/inv_1/out gnd gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1009 writedriver_0/nor_1/temp wb vdd vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1010 writedriver_0/nor_1/out writedriver_0/inv_1/out writedriver_0/nor_1/temp vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1011 writedriver_0/nor_1/out wb gnd gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1012 bl gnd vdd vdd pfet w=3 l=2
++  ad=0 pd=0 as=0 ps=0
+M1013 blb gnd vdd vdd pfet w=3 l=2
++  ad=0 pd=0 as=0 ps=0
+M1014 bl writedriver_0/nor_1/out gnd gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1015 blb writedriver_0/nor_0/out gnd gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1016 q qb vdd vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1017 qb q vdd vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1018 q qb gnd gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1019 bl wl q gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1020 qb q gnd gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1021 blb wl qb gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1022 dout senseamp_0/out vdd vdd pfet w=3 l=2
++  ad=0 pd=0 as=0 ps=0
+M1023 senseamp_0/2 senseamp_0/2 vdd vdd pfet w=3 l=2
++  ad=0 pd=0 as=0 ps=0
+M1024 senseamp_0/out bl senseamp_0/3 gnd nfet w=3 l=2
++  ad=0 pd=0 as=0 ps=0
+M1025 senseamp_0/out senseamp_0/2 vdd vdd pfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1026 senseamp_0/2 blb senseamp_0/3 gnd nfet w=3 l=2
++  ad=0 pd=0 as=0 ps=0
+M1027 senseamp_0/3 rd_en gnd gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1028 dout senseamp_0/out gnd gnd nfet w=3 l=2
++  ad=0 pd=0 as=0 ps=0
+C0 writedriver_0/nor_1/temp writedriver_0/nor_1/out 0.04fF
+C1 vdd q 0.22fF
+C2 vdd writedriver_0/nor_0/temp 0.12fF
+C3 din vdd 0.15fF
+C4 qb bl 0.04fF
+C5 blb qb 0.26fF
+C6 qb q 0.26fF
+C7 vdd writedriver_0/nor_0/out 0.07fF
+C8 dout vdd 0.07fF
+C9 din writedriver_0/inv_1/in 0.05fF
+C10 writedriver_0/nor_0/out wb 0.03fF
+C11 bl writedriver_0/nor_1/out 0.12fF
+C12 blb rd_en 0.15fF
+C13 senseamp_0/out senseamp_0/3 0.04fF
+C14 vdd wb 0.13fF
+C15 senseamp_0/2 senseamp_0/3 0.14fF
+C16 bl senseamp_0/out 0.01fF
+C17 vdd writedriver_0/inv_1/in 0.59fF
+C18 qb vdd 0.16fF
+C19 senseamp_0/2 bl 0.01fF
+C20 senseamp_0/2 blb 0.01fF
+C21 writedriver_0/nor_0/out writedriver_0/nor_1/out 0.08fF
+C22 writedriver_0/inv_1/in wb 0.06fF
+C23 vdd writedriver_0/inv_1/out 0.39fF
+C24 blb senseamp_0/3 0.08fF
+C25 blb bl 0.36fF
+C26 wb writedriver_0/inv_1/out 0.06fF
+C27 bl q 0.04fF
+C28 vdd writedriver_0/nor_1/temp 0.12fF
+C29 writedriver_0/inv_1/in writedriver_0/inv_1/out 0.05fF
+C30 bl din 0.03fF
+C31 blb din 0.03fF
+C32 vdd writedriver_0/nor_1/out 0.07fF
+C33 blb writedriver_0/nor_0/out 0.05fF
+C34 bl dout 0.04fF
+C35 writedriver_0/nor_0/temp writedriver_0/nor_0/out 0.04fF
+C36 vdd senseamp_0/out 0.17fF
+C37 bl wl 0.02fF
+C38 senseamp_0/2 vdd 0.27fF
+C39 writedriver_0/inv_1/out writedriver_0/nor_1/out 0.24fF
+C40 bl vdd 0.18fF
+C41 blb vdd 0.87fF
+C42 rd_en gnd 0.04fF
+C43 bl gnd 2.03fF
+C44 blb gnd 0.87fF
+C45 dout gnd 0.03fF
+C46 wl gnd 0.02fF
+C47 q gnd 0.04fF
+C48 qb gnd 0.04fF
+C49 writedriver_0/nor_1/out gnd 0.21fF
+C50 writedriver_0/inv_1/out gnd 0.02fF
+C51 wb gnd 0.02fF
+C52 writedriver_0/nor_0/out gnd 0.10fF
+C53 writedriver_0/inv_1/in gnd 0.05fF
+C54 vdd gnd 0.40fF
+C55 din gnd 0.01fF
+
+V1 vdd gnd dc 1.8V
+Vwl wl gnd pulse 0 1.8 0 60ps 60ps 5ns 10ns
+Vq q gnd pulse 0 1.8 0 60ps 60ps 1ns 2ns
+Vrd rd_en gnd pulse 0 1.8 0 60ps 60ps 5ns 10ns
+Vwb wb gnd dc 1.8V
+Vdin din gnd dc 0V
+
+.tran 0.1p 20n
+.control
+run
+plot V(rd_en)+10 V(dout) V(bl)+4 V(blb)+2 V(q)+8 V(qb)+6
+.endc
+.end

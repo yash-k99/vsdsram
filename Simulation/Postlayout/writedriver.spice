@@ -72,8 +72,6 @@ V3 din gnd pulse 0 1.8 0 60ps 60ps 0.5ns 1ns
 .tran 0.1p 10n
 .control
 run
-plot V(wb)
-plot V(din)
-plot V(bl) V(blb)
+plot V(wb)+6 V(din)+4 V(bl)+2 V(blb)
 .endc
 .end 

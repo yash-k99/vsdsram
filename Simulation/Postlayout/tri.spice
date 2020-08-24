@@ -39,8 +39,6 @@ Venb enb 0 pulse(1.8 0 0 60ps 60ps 2ns 4ns)
 .tran 0.1p 10n
 .control 
 run  
-plot V(en) V(enb)
-plot V(in)
-plot V(out)
+plot V(en)+6 V(enb)+4 V(in)+2 V(out)
 .endc
 .end

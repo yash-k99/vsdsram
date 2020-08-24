@@ -35,8 +35,6 @@ Vblb blb gnd pulse 1.8 0 0 60ps 60ps 5ns 10ns
 .tran 0.1n 100n 
 .control
 run
-plot V(wl)
-plot V(bl) V(blb)
-plot V(q) V(qb)
+plot V(wl)+8 V(bl)+6 V(blb)+4 V(q)+2 V(qb)
 .endc
 .end

@@ -1,46 +1,45 @@
 RAM
-.include NMOS-180nm.lib
-.include PMOS-180nm.lib
+.include osu018.lib
 
 *6T Cell
-M3 q qb vdd vdd CMOSP L=0.18u W=0.36u
-M4 q qb gnd gnd CMOSN L=0.18u W=0.72u
-M5 qb q vdd vdd CMOSP L=0.18u W=0.36u
-M6 qb q gnd gnd CMOSN L=0.18u W=0.72u
-M1 q wl bl gnd CMOSN L=0.18u W=0.36u
-M2 qb wl blb gnd CMOSN L=0.18u W=0.36u
+M3 q qb vdd vdd pfet L=0.2u W=0.4u
+M4 q qb gnd gnd nfet L=0.2u W=0.8u
+M5 qb q vdd vdd pfet L=0.2u W=0.4u
+M6 qb q gnd gnd nfet L=0.2u W=0.8u
+M1 q wl bl gnd nfet L=0.2u W=0.4u
+M2 qb wl blb gnd nfet L=0.2u W=0.4u
 
 *Precharge
-M7 bl gnd vdd vdd CMOSP L=0.18u W=0.36u
-M8 blb gnd vdd vdd CMOSP L=0.18u W=0.36u
+M7 bl gnd vdd vdd pfet L=0.2u W=0.4u
+M8 blb gnd vdd vdd pfet L=0.2u W=0.4u
 
 .subckt inv ip op vdd gnd
-M1 op ip vdd vdd CMOSP L=0.18u W=0.36u
-M2 op ip gnd gnd CMOSN L=0.18u W=0.36u
+M1 op ip vdd vdd pfet L=0.2u W=0.4u
+M2 op ip gnd gnd nfet L=0.2u W=0.4u
 .ends inv
 
 *Sense Amplifier
-M9 dout1 bl 3 3 CMOSN L=0.18u W=0.36u
-M10 2 blb 3 3 CMOSN L=0.18u W=0.36u
-M11 dout1 2 vdd vdd CMOSP L=0.18u W=0.9u
-M12 2 2 vdd vdd CMOSP L=0.18u W=0.9u
-M13 3 rd_en gnd gnd CMOSN L=0.18u W=0.72u
+M9 dout1 bl 3 3 nfet L=0.2u W=0.4u
+M10 2 blb 3 3 nfet L=0.2u W=0.4u
+M11 dout1 2 vdd vdd pfet L=0.2u W=1u
+M12 2 2 vdd vdd pfet L=0.2u W=1u
+M13 3 rd_en gnd gnd nfet L=0.2u W=0.8u
 xinv dout1 dout vdd gnd inv
 
 
 *Write Driver
 .subckt nor2ip in1 in2 out vdd gnd
-M1 out in1 gnd gnd CMOSN L=0.18u W=0.36u
-M2 out in2 gnd gnd CMOSN L=0.18u W=0.36u
-M3 out in1 temp temp CMOSP L=0.18u W=0.36u
-M4 temp in2 vdd vdd CMOSP L=0.18u W=0.36u
+M1 out in1 gnd gnd nfet L=0.2u W=0.4u
+M2 out in2 gnd gnd nfet L=0.2u W=0.4u
+M3 out in1 temp temp pfet L=0.2u W=0.4u
+M4 temp in2 vdd vdd pfet L=0.2u W=0.4u
 .ends nor2ip
 xinv1 din dinb vdd gnd inv
 xinv2 dinb dinbb vdd gnd inv
 xnor2ip1 wb dinb out1 vdd gnd nor2ip
 xnor2ip2 wb dinbb out2 vdd gnd nor2ip
-M16 blb out1 gnd gnd CMOSN L=0.18u W=0.9u
-M17 bl out2 gnd gnd CMOSN L=0.18u W=0.9u
+M16 blb out1 gnd gnd nfet L=0.2u W=1u
+M17 bl out2 gnd gnd nfet L=0.2u W=1u
 
 V1 vdd gnd dc 1.8V
 Vwl wl gnd pulse 0 1.8 0 60ps 60ps 5ns 10ns
@@ -51,9 +50,6 @@ Vrd rd_en gnd dc 0V
 .tran 0.1p 20n
 .control
 run
-plot V(bl) V(blb)
-plot V(q) V(qb)
-plot V(wb)
-plot V(din)
+plot V(bl)+6 V(blb)+4 V(q)+2 V(qb) V(wb)+10 V(din)+8
 .endc
 .end

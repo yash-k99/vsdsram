@@ -31,12 +31,9 @@ C12 vdd gnd 0.64fF
 V1 vdd gnd dc 1.8v
 Vwl wl gnd pulse 0 1.8 0 60ps 60ps 20ns 40ns
 Vq q gnd pulse 0 1.8 0 60ps 60ps 5ns 10ns
-Vqb qb gnd pulse 1.8 0 0 60ps 60ps 5ns 10ns
 .tran 0.1n 100n 
 .control
 run
-plot V(wl)
-plot V(bl) V(blb)
-plot V(q) V(qb)
+plot V(wl)+8 V(bl)+2 V(blb) V(q)+6 V(qb)+4
 .endc
 .end

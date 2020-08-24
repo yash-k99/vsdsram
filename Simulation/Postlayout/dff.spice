@@ -1,24 +1,24 @@
-* SPICE3 file created from dff_1.ext - technology: scmos
-
+* SPICE3 file created from dff.ext - technology: scmos
+.include osu018.lib
 .option scale=0.1u
 
 M1000 2 1 vdd vdd pfet w=4 l=2
-+  ad=20 pd=18 as=100 ps=90
++  ad=52 pd=42 as=100 ps=90
 M1001 5 Q gnd gnd nfet w=4 l=2
 +  ad=36 pd=26 as=100 ps=90
 M1002 clkb clk vdd vdd pfet w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-M1003 4 a_124_n11# 5 gnd nfet w=4 l=2
+M1003 4 clkb 5 gnd nfet w=4 l=2
 +  ad=64 pd=48 as=0 ps=0
 M1004 3 2 gnd gnd nfet w=4 l=2
 +  ad=36 pd=26 as=0 ps=0
 M1005 1 clk 3 gnd nfet w=4 l=2
 +  ad=64 pd=48 as=0 ps=0
-M1006 4 clk a_71_n16# gnd nfet w=4 l=2
-+  ad=0 pd=0 as=32 ps=24
-M1007 4 a_78_n6# a_71_n16# vdd pfet w=4 l=2
-+  ad=64 pd=48 as=32 ps=24
-M1008 1 a_10_n11# D gnd nfet w=4 l=2
+M1006 4 clk 2 gnd nfet w=4 l=2
++  ad=0 pd=0 as=52 ps=42
+M1007 4 clkb 2 vdd pfet w=4 l=2
++  ad=64 pd=48 as=0 ps=0
+M1008 1 clkb D gnd nfet w=4 l=2
 +  ad=0 pd=0 as=32 ps=24
 M1009 5 Q vdd vdd pfet w=4 l=2
 +  ad=36 pd=26 as=0 ps=0
@@ -33,74 +33,56 @@ M1013 3 2 vdd vdd pfet w=4 l=2
 M1014 4 clk 5 vdd pfet w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
 M1015 2 1 gnd gnd nfet w=4 l=2
-+  ad=20 pd=18 as=0 ps=0
-M1016 1 a_56_n6# 3 vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1016 1 clkb 3 vdd pfet w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
 M1017 Q 4 vdd vdd pfet w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
-C0 a_71_n16# a_78_n6# 0.07fF
-C1 4 clk 0.01fF
-C2 3 2 0.06fF
-C3 clkb a_56_n6# 0.02fF
-C4 vdd 2 0.43fF
-C5 a_124_n11# vdd 0.01fF
-C6 a_10_n11# vdd 0.01fF
-C7 clkb a_78_n6# 0.02fF
-C8 clkb a_71_n16# 0.03fF
+C0 2 3 0.06fF
+C1 vdd 5 0.07fF
+C2 clkb 4 0.50fF
+C3 clkb Q 0.06fF
+C4 1 3 0.01fF
+C5 clkb D 0.32fF
+C6 4 Q 0.05fF
+C7 vdd 2 0.58fF
+C8 clkb 3 0.10fF
 C9 vdd clk 0.49fF
-C10 3 1 0.01fF
+C10 clkb 5 0.10fF
 C11 2 clk 0.01fF
 C12 vdd 1 0.22fF
-C13 4 a_78_n6# 0.07fF
-C14 a_124_n11# clk 0.02fF
-C15 a_10_n11# clk 0.02fF
-C16 3 a_56_n6# 0.07fF
-C17 clkb D 0.25fF
-C18 2 1 0.05fF
-C19 vdd a_56_n6# 0.10fF
-C20 clkb Q 0.06fF
-C21 a_10_n11# 1 0.07fF
-C22 clkb 5 0.03fF
-C23 clkb 4 0.36fF
-C24 vdd a_78_n6# 0.10fF
-C25 clk 1 0.01fF
-C26 a_71_n16# vdd 0.22fF
-C27 Q 5 0.02fF
-C28 Q 4 0.05fF
-C29 clkb 3 0.03fF
-C30 clk a_56_n6# 0.01fF
-C31 4 5 0.01fF
-C32 a_71_n16# 2 0.02fF
-C33 clkb vdd 0.11fF
-C34 clk a_78_n6# 0.01fF
-C35 1 a_56_n6# 0.07fF
-C36 D vdd 0.03fF
-C37 clkb 2 0.06fF
-C38 Q vdd 0.23fF
-C39 clkb a_124_n11# 0.02fF
-C40 clkb a_10_n11# 0.03fF
-C41 5 vdd 0.07fF
-C42 4 vdd 0.22fF
-C43 a_71_n16# 1 0.21fF
-C44 a_10_n11# D 0.07fF
-C45 clkb clk 0.03fF
-C46 a_124_n11# 5 0.07fF
-C47 3 vdd 0.07fF
-C48 4 a_124_n11# 0.07fF
-C49 Q clk 0.01fF
-C50 clkb 1 0.42fF
-C51 a_124_n11# gnd 0.10fF
-C52 a_10_n11# gnd 0.10fF
-C53 5 gnd 0.07fF
-C54 a_71_n16# gnd 0.03fF
-C55 3 gnd 0.04fF
-C56 D gnd 0.03fF
-C57 clkb gnd 0.06fF
-C58 Q gnd 0.23fF
-C59 4 gnd 0.39fF
-C60 a_78_n6# gnd 0.01fF
-C61 a_56_n6# gnd 0.01fF
-C62 1 gnd 0.18fF
-C63 clk gnd 0.57fF
-C64 2 gnd 0.15fF
-C65 vdd gnd 3.06fF
+C13 4 5 0.01fF
+C14 2 1 0.26fF
+C15 vdd clkb 0.34fF
+C16 Q 5 0.02fF
+C17 clk 1 0.01fF
+C18 2 clkb 0.15fF
+C19 vdd 4 0.22fF
+C20 clk clkb 0.09fF
+C21 vdd Q 0.23fF
+C22 vdd D 0.03fF
+C23 clk 4 0.01fF
+C24 1 clkb 0.56fF
+C25 vdd 3 0.07fF
+C26 clk Q 0.01fF
+C27 5 gnd 0.07fF
+C28 3 gnd 0.04fF
+C29 D gnd 0.03fF
+C30 Q gnd 0.23fF
+C31 4 gnd 0.39fF
+C32 clkb gnd 0.15fF
+C33 1 gnd 0.18fF
+C34 clk gnd 0.57fF
+C35 2 gnd 0.16fF
+C36 vdd gnd 3.06fF
+
+V1 vdd gnd dc 1.8V
+V2 D gnd pulse 0 1.8 2.5ns 60ps 60ps 15ns 30ns
+V3 clk gnd pulse 0 1.8 0 60ps 60ps 5ns 10ns
+
+.tran 0.1ns 100ns
+.control 
+run
+plot V(Q) V(D)+2 V(clk)+4
+.endc
+.end

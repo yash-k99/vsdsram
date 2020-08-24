@@ -1,0 +1,118 @@
+* SPICE3 file created from 1bitsram.ext - technology: scmos
+
+.option scale=0.1u
+
+M1000 writedriver_0/inv_1/in din gnd gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1001 writedriver_0/inv_1/in din vdd vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1002 writedriver_0/inv_1/out writedriver_0/inv_1/in gnd gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1003 writedriver_0/inv_1/out writedriver_0/inv_1/in vdd vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1004 writedriver_0/nor_0/out wb gnd gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1005 writedriver_0/nor_0/temp writedriver_0/inv_1/in vdd vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 writedriver_0/nor_0/out wb writedriver_0/nor_0/temp vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1007 writedriver_0/nor_0/out writedriver_0/inv_1/in gnd gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1008 writedriver_0/nor_1/out writedriver_0/inv_1/out gnd gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1009 writedriver_0/nor_1/temp wb vdd vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1010 writedriver_0/nor_1/out writedriver_0/inv_1/out writedriver_0/nor_1/temp vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1011 writedriver_0/nor_1/out wb gnd gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1012 bl gnd vdd vdd pfet w=3 l=2
++  ad=0 pd=0 as=0 ps=0
+M1013 blb gnd vdd vdd pfet w=3 l=2
++  ad=0 pd=0 as=0 ps=0
+M1014 bl writedriver_0/nor_1/out gnd gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1015 blb writedriver_0/nor_0/out gnd gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1016 q qb vdd vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1017 qb q vdd vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1018 q qb gnd gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1019 bl wl q gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1020 qb q gnd gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1021 blb wl qb gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1022 dout senseamp_0/out vdd vdd pfet w=3 l=2
++  ad=0 pd=0 as=0 ps=0
+M1023 senseamp_0/2 senseamp_0/2 vdd vdd pfet w=3 l=2
++  ad=0 pd=0 as=0 ps=0
+M1024 senseamp_0/out bl senseamp_0/3 gnd nfet w=3 l=2
++  ad=0 pd=0 as=0 ps=0
+M1025 senseamp_0/out senseamp_0/2 vdd vdd pfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1026 senseamp_0/2 blb senseamp_0/3 gnd nfet w=3 l=2
++  ad=0 pd=0 as=0 ps=0
+M1027 senseamp_0/3 rd_en gnd gnd nfet w=10 l=2
++  ad=0 pd=0 as=0 ps=0
+M1028 dout senseamp_0/out gnd gnd nfet w=3 l=2
++  ad=0 pd=0 as=0 ps=0
+C0 writedriver_0/inv_1/out writedriver_0/nor_1/out 0.24fF
+C1 wb writedriver_0/inv_1/in 0.06fF
+C2 bl din 0.03fF
+C3 senseamp_0/3 senseamp_0/out 0.04fF
+C4 bl qb 0.04fF
+C5 vdd senseamp_0/2 0.27fF
+C6 bl writedriver_0/nor_1/out 0.12fF
+C7 senseamp_0/2 blb 0.01fF
+C8 writedriver_0/nor_1/temp writedriver_0/nor_1/out 0.04fF
+C9 wl bl 0.02fF
+C10 bl dout 0.04fF
+C11 q bl 0.04fF
+C12 writedriver_0/nor_0/out writedriver_0/nor_1/out 0.08fF
+C13 vdd blb 0.87fF
+C14 writedriver_0/nor_0/out writedriver_0/nor_0/temp 0.04fF
+C15 vdd writedriver_0/inv_1/in 0.59fF
+C16 wb writedriver_0/inv_1/out 0.06fF
+C17 q qb 0.26fF
+C18 writedriver_0/nor_0/out wb 0.03fF
+C19 bl senseamp_0/2 0.01fF
+C20 vdd writedriver_0/inv_1/out 0.39fF
+C21 vdd bl 0.18fF
+C22 vdd senseamp_0/out 0.17fF
+C23 bl blb 0.36fF
+C24 senseamp_0/3 senseamp_0/2 0.14fF
+C25 vdd writedriver_0/nor_1/temp 0.12fF
+C26 writedriver_0/inv_1/in writedriver_0/inv_1/out 0.05fF
+C27 writedriver_0/nor_0/out vdd 0.07fF
+C28 vdd din 0.15fF
+C29 writedriver_0/nor_0/out blb 0.05fF
+C30 din blb 0.03fF
+C31 vdd qb 0.16fF
+C32 senseamp_0/3 blb 0.08fF
+C33 vdd writedriver_0/nor_1/out 0.07fF
+C34 blb qb 0.26fF
+C35 vdd dout 0.07fF
+C36 writedriver_0/inv_1/in din 0.05fF
+C37 vdd writedriver_0/nor_0/temp 0.12fF
+C38 q vdd 0.22fF
+C39 wb vdd 0.13fF
+C40 bl senseamp_0/out 0.01fF
+C41 blb rd_en 0.15fF
+C42 rd_en gnd 0.04fF
+C43 bl gnd 2.03fF
+C44 blb gnd 0.87fF
+C45 dout gnd 0.03fF
+C46 wl gnd 0.02fF
+C47 q gnd 0.04fF
+C48 qb gnd 0.04fF
+C49 writedriver_0/nor_1/out gnd 0.21fF
+C50 writedriver_0/inv_1/out gnd 0.02fF
+C51 wb gnd 0.02fF
+C52 writedriver_0/nor_0/out gnd 0.10fF
+C53 writedriver_0/inv_1/in gnd 0.05fF
+C54 vdd gnd 0.40fF
+C55 din gnd 0.01fF
