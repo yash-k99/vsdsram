@@ -1,5 +1,5 @@
 * SPICE3 file created from dff.ext - technology: scmos
-.include osu018.lib
+
 .option scale=0.1u
 
 M1000 2 1 vdd vdd pfet w=4 l=2
@@ -75,14 +75,3 @@ C33 1 gnd 0.18fF
 C34 clk gnd 0.57fF
 C35 2 gnd 0.16fF
 C36 vdd gnd 3.06fF
-
-V1 vdd gnd dc 1.8V
-V2 D gnd pulse 0 1.8 2.5ns 60ps 60ps 15ns 30ns
-V3 clk gnd pulse 0 1.8 0 60ps 60ps 5ns 10ns
-
-.tran 0.1ns 100ns
-.control 
-run
-plot V(Q) V(D)+2 V(clk)+4
-.endc
-.end

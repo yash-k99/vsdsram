@@ -1,0 +1,48 @@
+timestamp 1598290472
+version 8.2
+tech scmos
+style TSMC0.18um(tsmc18)from:t11b
+scale 1000 1 10
+resistclasses 6700 7500 929000 929000 1 7700 7700 80 80 80 70 70 40
+use writedriver writedriver_0 1 0 -75 0 1 182
+use cell6T cell6T_0 -1 0 -7 0 -1 21
+use senseamp senseamp_0 1 0 -27 0 1 -26
+node "wb" 0 4.654 -87 150 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0 0 0
+node "m2_n12_n1#" 1 49.313 -12 -1 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 121 76 0 0 0 0 0 0 0 0
+node "m2_n43_n9#" 1 47.897 -43 -9 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 117 74 0 0 0 0 0 0 0 0
+node "bl" 0 28.832 -12 82 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72 44 0 0 0 0 0 0 0 0
+node "blb" 0 28.832 -28 82 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72 44 0 0 0 0 0 0 0 0
+node "rd_en" 0 24.063 13 -76 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0 0 0 0 0 0 0
+node "dout" 0 28.374 13 -38 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20 18 0 0 0 0 0 0 0 0 0 0
+node "q" 0 32.268 5 33 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24 20 0 0 0 0 0 0 0 0 0 0
+node "qb" 0 32.268 -40 33 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24 20 0 0 0 0 0 0 0 0 0 0
+node "wl" 0 27.54 -40 78 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18 18 0 0 0 0 0 0 0 0 0 0
+node "din" 0 17.109 -87 197 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9 12 0 0 0 0 0 0 0 0 0 0
+substrate "w_n1073741817_n1073741817#" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "cell6T_0/blb" "cell6T_0/vdd!" 7.44
+cap "cell6T_0/blb" "senseamp_0/vdd!" 1.322
+cap "cell6T_0/bl" "cell6T_0/vdd!" 7.44
+cap "cell6T_0/bl" "senseamp_0/vdd!" 2.576
+cap "cell6T_0/gnd!" "cell6T_0/bl" 26.8937
+subcap "rd_en" -3.339
+subcap "dout" -44.484
+cap "cell6T_0/gnd!" "q" 4.864
+subcap "q" -134.85
+merge "cell6T_0/wl" "wl" -6.678 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0 0 0 0 0 0 0
+merge "senseamp_0/bl" "cell6T_0/bl" -6.688 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0 0 0 0 0
+merge "cell6T_0/bl" "m2_n12_n1#"
+merge "m2_n12_n1#" "writedriver_0/bl"
+merge "writedriver_0/bl" "bl"
+merge "senseamp_0/blb" "cell6T_0/blb" -6.688 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0 0 0 0 0
+merge "cell6T_0/blb" "m2_n43_n9#"
+merge "m2_n43_n9#" "writedriver_0/blb"
+merge "writedriver_0/blb" "blb"
+merge "writedriver_0/wb" "wb" -2.056 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0
+merge "cell6T_0/qb" "qb" -8.904 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0
+merge "writedriver_0/w_n1073741817_n1073741817#" "senseamp_0/gnd!" -1.672 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "senseamp_0/gnd!" "cell6T_0/gnd!"
+merge "cell6T_0/gnd!" "w_n1073741817_n1073741817#"
+merge "senseamp_0/rd_en" "rd_en" -13.356 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0 0 0 0 0 0 0
+merge "writedriver_0/din" "din" -6.678 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0 0 0 0 0 0 0
+merge "senseamp_0/dout" "dout" -17.808 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0 0 0 0 0 0 0
+merge "cell6T_0/q" "q" -1.122 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24 -10 0 0 0 0 0 0 0 0 0 0

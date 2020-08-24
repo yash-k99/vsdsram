@@ -8,9 +8,9 @@ node "out" 18 135.606 4 -13 ndif 20 18 20 18 0 0 0 0 0 0 0 0 0 0 98 60 0 0 0 0 0
 node "in" 93 167.913 -2 -6 pc 0 0 0 0 0 0 0 0 0 0 64 60 0 0 37 30 0 0 0 0 0 0 0 0 0 0
 node "vdd!" 1078 391.944 -9 -3 nw 16 16 20 18 504 90 0 0 0 0 0 0 0 0 128 72 0 0 0 0 0 0 0 0 0 0
 substrate "gnd!" 0 0 -3 -21 poc 20 18 16 16 0 0 0 0 0 0 0 0 0 0 128 72 0 0 0 0 0 0 0 0 0 0
-cap "in" "out" 54.984
 cap "vdd!" "in" 125.418
 cap "vdd!" "out" 114.744
+cap "in" "out" 54.984
 device mosfet nfet 2 -13 3 -12 2 4 "gnd!" "in" 4 0 "gnd!" 4 0 "out" 4 0
 device mosfet pfet 2 3 3 4 2 4 "vdd!" "in" 4 0 "vdd!" 4 0 "out" 4 0
 subcap "out" -92.907

@@ -10,13 +10,13 @@ node "in1" 169 200.29 6 -27 p 0 0 0 0 0 0 0 0 0 0 88 92 0 0 0 0 0 0 0 0 0 0 0 0 
 node "in2" 135 140.368 -13 -10 p 0 0 0 0 0 0 0 0 0 0 70 74 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "vdd!" 1432 519.624 -13 -6 nw 16 16 20 18 672 106 0 0 0 0 0 0 0 0 160 88 0 0 0 0 0 0 0 0 0 0
 substrate "gnd!" 0 0 -7 -24 poc 40 36 16 16 0 0 0 0 0 0 0 0 0 0 80 48 0 0 0 0 0 0 0 0 0 0
-cap "in2" "in1" 60.432
-cap "vdd!" "in2" 67.13
-cap "out" "in1" 16.876
-cap "vdd!" "in1" 67.13
 cap "vdd!" "out" 73.506
-cap "out" "temp" 41.238
 cap "vdd!" "temp" 119.329
+cap "in1" "out" 16.876
+cap "out" "temp" 41.238
+cap "vdd!" "in2" 67.13
+cap "vdd!" "in1" 67.13
+cap "in2" "in1" 60.432
 device mosfet nfet 6 -24 7 -23 2 4 "gnd!" "in1" 4 0 "gnd!" 4 0 "out" 4 0
 device mosfet nfet -2 -16 -1 -15 2 4 "gnd!" "in2" 4 0 "gnd!" 4 0 "out" 4 0
 device mosfet pfet 6 0 7 1 2 4 "vdd!" "in1" 4 0 "temp" 4 0 "out" 4 0

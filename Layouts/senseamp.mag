@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1598076063
+timestamp 1598279610
 << nwell >>
 rect -16 -7 40 20
 << ntransistor >>
@@ -73,14 +73,13 @@ rect 11 -22 13 -16
 rect 27 -18 29 -16
 rect 11 -24 30 -22
 rect 3 -26 5 -24
-rect 3 -37 5 -36
-rect -5 -39 5 -37
+rect 3 -47 5 -36
 << polycontact >>
 rect -2 -7 2 -3
 rect 18 -10 22 -6
 rect -9 -30 -5 -26
 rect 30 -25 34 -21
-rect -9 -40 -5 -36
+rect 2 -51 6 -47
 << metal1 >>
 rect -6 13 6 17
 rect 10 13 22 17
@@ -97,20 +96,29 @@ rect -10 -20 -6 -17
 rect 6 -20 10 -17
 rect -10 -23 10 -20
 rect 6 -26 10 -23
-rect -16 -30 -9 -26
-rect -16 -40 -9 -36
+rect -12 -30 -9 -26
 rect -2 -40 2 -36
 rect 22 -40 26 -17
-rect 34 -25 40 -21
+rect 29 -25 30 -21
 rect 2 -44 22 -40
+rect -16 -50 2 -47
+rect 6 -50 40 -47
+<< m2contact >>
+rect -16 -30 -12 -26
+rect 30 -25 34 -21
+<< metal2 >>
+rect -16 -26 -12 17
+rect -16 -51 -12 -30
+rect 30 -21 34 17
+rect 30 -51 34 -25
 << labels >>
 rlabel metal1 2 15 2 15 5 vdd!
 rlabel metal1 12 -42 12 -42 1 gnd!
-rlabel metal1 -13 -28 -13 -28 3 blb
-rlabel metal1 -13 -38 -13 -38 3 rd_en
-rlabel metal1 37 -23 37 -23 7 bl
+rlabel m2contact -13 -28 -13 -28 3 blb
 rlabel metal1 37 -10 37 -10 7 dout
 rlabel metal1 0 -9 0 -9 1 2
 rlabel metal1 16 -9 16 -9 1 out
 rlabel metal1 8 -22 8 -22 1 3
+rlabel metal2 32 -28 32 -28 1 bl
+rlabel metal1 12 -49 12 -49 1 rd_en
 << end >>

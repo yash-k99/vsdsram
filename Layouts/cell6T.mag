@@ -1,0 +1,119 @@
+magic
+tech scmos
+timestamp 1598278612
+<< nwell >>
+rect -13 -6 27 15
+<< ntransistor >>
+rect -2 -29 0 -21
+rect 14 -29 16 -21
+rect -2 -50 0 -46
+rect 14 -50 16 -46
+<< ptransistor >>
+rect -2 0 0 4
+rect 14 0 16 4
+<< ndiffusion >>
+rect -7 -25 -2 -21
+rect -3 -29 -2 -25
+rect 0 -25 5 -21
+rect 0 -29 1 -25
+rect 9 -25 14 -21
+rect 13 -29 14 -25
+rect 16 -25 21 -21
+rect 16 -29 17 -25
+rect -3 -50 -2 -46
+rect 0 -50 1 -46
+rect 13 -50 14 -46
+rect 16 -50 17 -46
+<< pdiffusion >>
+rect -3 0 -2 4
+rect 0 0 1 4
+rect 13 0 14 4
+rect 16 0 17 4
+<< ndcontact >>
+rect -7 -29 -3 -25
+rect 1 -29 5 -25
+rect 9 -29 13 -25
+rect 17 -29 21 -25
+rect -7 -50 -3 -46
+rect 1 -50 5 -46
+rect 9 -50 13 -46
+rect 17 -50 21 -46
+<< pdcontact >>
+rect -7 0 -3 4
+rect 1 0 5 4
+rect 9 0 13 4
+rect 17 0 21 4
+<< psubstratepcontact >>
+rect -7 -37 -3 -33
+rect 9 -37 13 -33
+<< nsubstratencontact >>
+rect -7 8 -3 12
+rect 9 8 13 12
+<< polysilicon >>
+rect -2 4 0 6
+rect 14 4 16 6
+rect -2 -7 0 0
+rect -2 -9 7 -7
+rect -2 -21 0 -9
+rect 14 -14 16 0
+rect 11 -16 16 -14
+rect 14 -21 16 -16
+rect -2 -31 0 -29
+rect 14 -31 16 -29
+rect -2 -46 0 -44
+rect 14 -46 16 -44
+rect -2 -52 0 -50
+rect 14 -52 16 -50
+rect -2 -54 16 -52
+rect 10 -57 12 -54
+<< polycontact >>
+rect 7 -11 11 -7
+rect 7 -18 11 -14
+rect 9 -61 13 -57
+<< metal1 >>
+rect -13 8 -7 12
+rect -3 8 9 12
+rect 13 8 27 12
+rect -7 4 -3 8
+rect 9 4 13 8
+rect 1 -12 4 0
+rect 17 -7 20 0
+rect 11 -10 20 -7
+rect -13 -14 4 -12
+rect 17 -12 20 -10
+rect -13 -16 7 -14
+rect -13 -46 -10 -16
+rect 1 -17 7 -16
+rect 1 -25 4 -17
+rect 17 -16 27 -12
+rect 17 -25 20 -16
+rect -7 -33 -3 -29
+rect 9 -33 13 -29
+rect -3 -37 9 -33
+rect 24 -40 27 -16
+rect -13 -50 -7 -46
+rect 9 -43 27 -40
+rect 9 -46 13 -43
+rect -13 -60 9 -57
+rect 13 -60 27 -57
+<< m2contact >>
+rect -7 -37 -3 -33
+rect 1 -46 5 -42
+rect 17 -54 21 -50
+<< metal2 >>
+rect -13 -33 -9 12
+rect -13 -37 -7 -33
+rect -13 -61 -9 -37
+rect 1 -42 5 12
+rect 1 -61 5 -46
+rect 17 -50 21 12
+rect 17 -61 21 -54
+<< labels >>
+rlabel metal1 24 10 24 10 6 vdd!
+rlabel metal2 -11 -9 -11 -9 3 gnd!
+rlabel metal1 -6 -14 -6 -14 1 q
+rlabel metal1 24 -14 24 -14 7 qb
+rlabel metal2 3 -39 3 -39 1 bl
+rlabel metal2 19 -39 19 -39 1 blb
+rlabel metal1 8 -59 8 -59 1 wl
+<< end >>

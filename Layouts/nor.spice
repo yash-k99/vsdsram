@@ -10,3 +10,14 @@ M1002 out in1 temp vdd pfet w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
 M1003 out in2 gnd gnd nfet w=4 l=2
 +  ad=0 pd=0 as=0 ps=0
+C0 vdd out 0.07fF
+C1 in1 out 0.02fF
+C2 temp out 0.04fF
+C3 vdd in2 0.07fF
+C4 vdd in1 0.07fF
+C5 vdd temp 0.12fF
+C6 in2 in1 0.06fF
+C7 out gnd 0.09fF
+C8 in1 gnd 0.20fF
+C9 in2 gnd 0.14fF
+C10 vdd gnd 0.52fF

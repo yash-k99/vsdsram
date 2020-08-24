@@ -1,0 +1,29 @@
+* SPICE3 file created from replicacell6T.ext - technology: scmos
+
+.option scale=0.1u
+
+M1000 q vdd vdd vdd pfet w=4 l=2
++  ad=20 pd=18 as=60 ps=54
+M1001 vdd q vdd vdd pfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1002 q vdd gnd gnd nfet w=8 l=2
++  ad=60 pd=44 as=80 ps=52
+M1003 bl wl q gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1004 vdd q gnd gnd nfet w=8 l=2
++  ad=92 pd=76 as=0 ps=0
+M1005 blb wl vdd gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+C0 bl vdd 0.12fF
+C1 vdd q 0.48fF
+C2 vdd blb 0.26fF
+C3 bl q 0.15fF
+C4 vdd wl 0.02fF
+C5 bl wl 0.05fF
+C6 q wl 0.06fF
+C7 wl blb 0.08fF
+C8 blb gnd 0.08fF
+C9 bl gnd 0.07fF
+C10 wl gnd 0.35fF
+C11 q gnd 0.41fF
+C12 vdd gnd 1.28fF

@@ -9,10 +9,10 @@ node "bl" 13 10.293 0 -1 pdif 0 0 19 18 0 0 0 0 0 0 0 0 0 0 43 34 0 0 0 0 0 0 0 
 node "gnd!" 138 21.484 -2 -7 p 0 0 0 0 0 0 0 0 0 0 80 80 0 0 24 20 0 0 0 0 0 0 0 0 0 0
 node "vdd!" 1777 677.704 -13 -8 nw 32 32 38 36 880 124 0 0 0 0 0 0 0 0 224 120 0 0 0 0 0 0 0 0 0 0
 substrate "w_n1073741817_n1073741817#" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "gnd!" "bl" 96.258
-cap "vdd!" "gnd!" 272.012
-cap "gnd!" "blb" 41.238
-cap "vdd!" "bl" 152.229
 cap "vdd!" "blb" 119.751
+cap "gnd!" "blb" 41.238
+cap "vdd!" "gnd!" 272.012
+cap "vdd!" "bl" 152.229
+cap "gnd!" "bl" 96.258
 device mosfet pfet 14 -1 15 0 2 3 "vdd!" "gnd!" 4 0 "vdd!" 3 0 "blb" 3 0
 device mosfet pfet -2 -1 -1 0 2 3 "vdd!" "gnd!" 4 0 "vdd!" 3 0 "bl" 3 0

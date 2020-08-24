@@ -1,5 +1,5 @@
 * SPICE3 file created from senseamp.ext - technology: scmos
-.include osu018.lib
+
 .option scale=0.1u
 
 M1000 dout out vdd vdd pfet w=3 l=2
@@ -38,15 +38,3 @@ C18 dout gnd 0.05fF
 C19 out gnd 0.15fF
 C20 2 gnd 0.04fF
 C21 vdd gnd 1.15fF
-
-V1 vdd gnd dc 1.8v
-V2 blb 0 pulse 1.8 0 0 60ps 60ps 1ns 2ns
-V3 bl 0 pulse 0 1.8 0 60ps 60ps 1ns 2ns
-V4 rd_en 0 pulse 0 1.8 0 60ps 60ps 5ns 10ns
-
-.tran 0.1p 20n
-.control
-run
-plot V(rd_en)+6 V(bl)+4 V(blb)+2 V(dout) 
-.endc
-.end

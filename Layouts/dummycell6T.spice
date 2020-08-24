@@ -1,0 +1,43 @@
+* SPICE3 file created from dummycell6T.ext - technology: scmos
+
+.option scale=0.1u
+
+M1000 q qb vdd vdd pfet w=4 l=2
++  ad=20 pd=18 as=40 ps=36
+M1001 qb q vdd vdd pfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1002 q qb gnd gnd nfet w=8 l=2
++  ad=60 pd=44 as=80 ps=52
+M1003 a_0_n50# wl q gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1004 qb q gnd gnd nfet w=8 l=2
++  ad=60 pd=44 as=0 ps=0
+M1005 a_16_n50# wl qb gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+C0 wl bl 0.03fF
+C1 a_0_n50# bl 0.02fF
+C2 wl blb 0.02fF
+C3 vdd qb 0.20fF
+C4 a_16_n50# blb 0.02fF
+C5 vdd q 0.22fF
+C6 qb q 0.26fF
+C7 qb wl 0.02fF
+C8 qb a_0_n50# 0.05fF
+C9 q wl 0.06fF
+C10 q a_0_n50# 0.04fF
+C11 qb a_16_n50# 0.10fF
+C12 vdd bl 0.04fF
+C13 wl a_0_n50# 0.02fF
+C14 vdd blb 0.04fF
+C15 qb bl 0.00fF
+C16 wl a_16_n50# 0.03fF
+C17 qb blb 0.13fF
+C18 q bl 0.11fF
+C19 blb gnd 0.05fF **FLOATING
+C20 bl gnd 0.12fF **FLOATING
+C21 a_16_n50# gnd 0.02fF
+C22 a_0_n50# gnd 0.02fF
+C23 wl gnd 0.35fF
+C24 q gnd 0.41fF
+C25 qb gnd 0.32fF
+C26 vdd gnd 0.68fF

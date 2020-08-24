@@ -1,0 +1,44 @@
+magic
+tech scmos
+timestamp 1598290472
+<< metal1 >>
+rect -87 197 -84 200
+rect -40 78 -34 81
+rect -40 33 -34 37
+rect 5 33 11 37
+rect 13 -38 18 -34
+rect 13 -76 18 -73
+<< metal2 >>
+rect -28 82 -24 100
+rect -12 82 -8 100
+rect -28 2 -24 9
+rect -43 -1 -24 2
+rect -12 2 -8 10
+rect -12 -1 7 2
+rect -43 -9 -39 -1
+rect 3 -9 7 -1
+<< metal3 >>
+rect -87 150 -84 154
+use writedriver  writedriver_0
+timestamp 1598281089
+transform 1 0 -75 0 1 182
+box -9 -82 120 39
+use cell6T  cell6T_0
+timestamp 1598278612
+transform -1 0 -7 0 -1 21
+box -13 -61 27 15
+use senseamp  senseamp_0
+timestamp 1598279610
+transform 1 0 -27 0 1 -26
+box -16 -51 40 20
+<< labels >>
+rlabel metal2 -26 93 -26 93 1 blb
+rlabel metal2 -10 93 -10 93 1 bl
+rlabel metal3 -86 152 -86 152 3 wb
+rlabel metal1 -86 198 -86 198 3 din
+rlabel metal1 -38 79 -38 79 1 wl
+rlabel metal1 -38 35 -38 35 1 qb
+rlabel metal1 9 35 9 35 1 q
+rlabel metal1 15 -36 15 -36 1 dout
+rlabel metal1 16 -75 16 -75 1 rd_en
+<< end >>

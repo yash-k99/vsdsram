@@ -1,35 +1,40 @@
-timestamp 1598166292
+timestamp 1598289369
 version 8.2
 tech scmos
 style TSMC0.18um(tsmc18)from:t11b
 scale 1000 1 10
 resistclasses 6700 7500 929000 929000 1 7700 7700 80 80 80 70 70 40
 node "3" 36 13.356 -1024 -13 ndif 120 60 0 0 0 0 0 0 0 0 0 0 0 0 32 24 0 0 0 0 0 0 0 0 0 0
-node "en" 49 142.673 -1014 -4 pc 0 0 0 0 0 0 0 0 0 0 34 34 0 0 43 34 0 0 0 0 0 0 0 0 0 0
-node "out" 19 55.632 -1012 3 ndif 20 18 35 24 0 0 0 0 0 0 0 0 0 0 104 60 0 0 0 0 0 0 0 0 0 0
-node "enb" 61 3.339 -1014 17 p 0 0 0 0 0 0 0 0 0 0 44 42 0 0 37 30 0 0 0 0 0 0 0 0 0 0
+node "en" 50 203.448 -1017 -4 pc 0 0 0 0 0 0 0 0 0 0 38 36 0 0 20 18 208 112 0 0 0 0 0 0 0 0
+node "out" 21 181.374 -1012 3 ndif 20 18 35 24 0 0 0 0 0 0 0 0 0 0 290 184 0 0 0 0 0 0 0 0 0 0
+node "enb" 54 3.344 -1017 27 pc 0 0 0 0 0 0 0 0 0 0 40 38 0 0 20 18 208 112 0 0 0 0 0 0 0 0
 node "2" 33 -3.55271e-15 -1024 19 pdif 0 0 135 60 0 0 0 0 0 0 0 0 0 0 32 24 0 0 0 0 0 0 0 0 0 0
 node "in" 123 167.913 -1046 10 pc 0 0 0 0 0 0 0 0 0 0 80 76 0 0 37 30 0 0 0 0 0 0 0 0 0 0
 node "inb" 277 210.928 -1040 3 ndif 20 18 60 34 0 0 0 0 0 0 138 138 0 0 96 56 0 0 0 0 0 0 0 0 0 0
-node "vdd!" 1379 1566.31 -1053 13 nw 32 32 160 84 1976 180 0 0 0 0 0 0 0 0 292 178 0 0 0 0 0 0 0 0 0 0
-substrate "gnd!" 0 0 -1047 -21 poc 120 68 32 32 0 0 0 0 0 0 0 0 0 0 340 178 0 0 0 0 0 0 0 0 0 0
-cap "out" "en" 54.984
-cap "out" "3" 41.238
-cap "vdd!" "out" 27.816
+node "vdd!" 1378 1524.02 -1053 13 nw 32 32 160 84 1976 180 0 0 0 0 0 0 0 0 196 114 0 0 0 0 0 0 0 0 0 0
+substrate "gnd!" 0 0 -1047 -13 poc 120 68 16 16 0 0 0 0 0 0 0 0 0 0 144 80 0 0 0 0 0 0 0 0 0 0
+cap "inb" "en" 6.208
+cap "enb" "out" 17.692
 cap "2" "out" 41.238
-cap "vdd!" "inb" 108.642
-cap "enb" "out" 32.9904
-cap "vdd!" "in" 93.802
-cap "vdd!" "2" 8.904
 cap "inb" "in" 73.1136
-cap "vdd!" "enb" 139.961
+cap "out" "en" 17.692
+cap "in" "enb" 6.208
+cap "out" "3" 41.238
+cap "inb" "vdd!" 108.642
+cap "en" "3" 35.472
+cap "vdd!" "enb" 175.954
+cap "2" "vdd!" 8.904
+cap "vdd!" "out" 117.648
+cap "inb" "enb" 12.098
+cap "in" "vdd!" 93.802
+cap "2" "enb" 28.599
 device mosfet nfet -1014 3 -1013 4 2 4 "gnd!" "en" 4 0 "3" 4 0 "out" 4 0
 device mosfet nfet -1026 -13 -1025 -12 2 20 "gnd!" "inb" 4 0 "gnd!" 20 0 "3" 20 0
 device mosfet nfet -1042 3 -1041 4 2 4 "gnd!" "in" 4 0 "gnd!" 4 0 "inb" 4 0
 device mosfet pfet -1014 19 -1013 20 2 7 "vdd!" "enb" 4 0 "2" 7 0 "out" 7 0
 device mosfet pfet -1026 19 -1025 20 2 20 "vdd!" "inb" 4 0 "vdd!" 20 0 "2" 20 0
 device mosfet pfet -1042 19 -1041 20 2 12 "vdd!" "in" 4 0 "vdd!" 12 0 "inb" 12 0
-subcap "en" -10.431
-subcap "out" -11.682
+subcap "en" -39.06
+subcap "out" -137.424
 subcap "in" -62.076
-subcap "inb" -41.238
+subcap "inb" -63.798

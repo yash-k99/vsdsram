@@ -1,5 +1,5 @@
 * SPICE3 file created from writedriver.ext - technology: scmos
-.include osu018.lib
+
 .option scale=0.1u
 
 M1000 inv_1/in din gnd gnd nfet w=4 l=2
@@ -64,14 +64,3 @@ C26 nor_0/out gnd 0.29fF
 C27 inv_1/in gnd 0.38fF
 C28 vdd gnd 0.89fF
 C29 din gnd 0.02fF
-
-V1 vdd gnd dc 1.8V
-V2 wb gnd pulse 0 1.8 0 60ps 60ps 2ns 4ns
-V3 din gnd pulse 0 1.8 0 60ps 60ps 0.5ns 1ns
-
-.tran 0.1p 10n
-.control
-run
-plot V(wb)+6 V(din)+4 V(bl)+2 V(blb)
-.endc
-.end 

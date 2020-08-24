@@ -1,0 +1,44 @@
+timestamp 1598278778
+version 8.2
+tech scmos
+style TSMC0.18um(tsmc18)from:t11b
+scale 1000 1 10
+resistclasses 6700 7500 929000 929000 1 7700 7700 80 80 80 70 70 40
+node "blb" 1 48.469 17 -61 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 292 154 0 0 0 0 0 0 0 0
+node "bl" 1 116.3 1 -61 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 292 154 0 0 0 0 0 0 0 0
+node "a_16_n50#" 8 17.25 16 -50 ndif 20 18 0 0 0 0 0 0 0 0 0 0 0 0 20 18 0 0 0 0 0 0 0 0 0 0
+node "a_0_n50#" 8 17.25 0 -50 ndif 20 18 0 0 0 0 0 0 0 0 0 0 0 0 20 18 0 0 0 0 0 0 0 0 0 0
+node "wl" 159 424.496 -2 -54 p 0 0 0 0 0 0 0 0 0 0 90 90 0 0 124 88 0 0 0 0 0 0 0 0 0 0
+node "q" 220 860.624 -7 -50 ndc 60 44 20 18 0 0 0 0 0 0 96 96 0 0 318 202 0 0 0 0 0 0 0 0 0 0
+node "qb" 236 571.487 -2 -31 p 60 44 20 18 0 0 0 0 0 0 104 104 0 0 323 210 0 0 0 0 0 0 0 0 0 0
+node "vdd!" 1854 680.052 -13 -6 nw 32 32 40 36 840 122 0 0 0 0 0 0 0 0 224 120 0 0 0 0 0 0 0 0 0 0
+substrate "gnd!" 0 0 -7 -37 poc 80 52 32 32 0 0 0 0 0 0 0 0 0 0 144 80 316 166 0 0 0 0 0 0 0 0
+cap "wl" "blb" 22.556
+cap "a_0_n50#" "bl" 20.62
+cap "vdd!" "qb" 204.05
+cap "a_16_n50#" "blb" 20.62
+cap "vdd!" "q" 221.723
+cap "qb" "q" 255.282
+cap "qb" "wl" 23.5646
+cap "q" "wl" 58.9114
+cap "qb" "a_0_n50#" 51.5475
+cap "q" "a_0_n50#" 41.238
+cap "qb" "a_16_n50#" 96.222
+cap "vdd!" "bl" 36.862
+cap "wl" "a_0_n50#" 23.5646
+cap "vdd!" "blb" 36.862
+cap "qb" "bl" 2.812
+cap "wl" "a_16_n50#" 27.492
+cap "qb" "blb" 128.143
+cap "q" "bl" 106.342
+cap "wl" "bl" 28.764
+device mosfet nfet 14 -50 15 -49 2 4 "gnd!" "wl" 4 0 "qb" 4 0 "a_16_n50#" 4 0
+device mosfet nfet -2 -50 -1 -49 2 4 "gnd!" "wl" 4 0 "q" 4 0 "a_0_n50#" 4 0
+device mosfet nfet 14 -29 15 -28 2 8 "gnd!" "q" 4 0 "gnd!" 8 0 "qb" 8 0
+device mosfet nfet -2 -29 -1 -28 2 8 "gnd!" "qb" 4 0 "gnd!" 8 0 "q" 8 0
+device mosfet pfet 14 0 15 1 2 4 "vdd!" "q" 4 0 "vdd!" 4 0 "qb" 4 0
+device mosfet pfet -2 0 -1 1 2 4 "vdd!" "qb" 4 0 "vdd!" 4 0 "q" 4 0
+subcap "wl" -71.06
+subcap "q" -451.202
+subcap "qb" -254.362
+subcap "gnd!" -6.44

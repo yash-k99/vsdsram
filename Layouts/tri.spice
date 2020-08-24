@@ -1,5 +1,5 @@
 * SPICE3 file created from tri.ext - technology: scmos
-.include osu018.lib
+
 .option scale=0.1u
 
 M1000 out enb 2 vdd pfet w=7 l=2
@@ -36,14 +36,3 @@ C18 enb gnd 0.00fF
 C19 in gnd 0.11fF
 C20 inb gnd 0.15fF
 C21 vdd gnd 1.52fF
-
-V1 vdd gnd 1.8v
-Vin in 0 pulse(0 1.8 0 60ps 60ps 0.5ns 1ns)
-Ven en 0 pulse(0 1.8 0 60ps 60ps 2ns 4ns)
-Venb enb 0 pulse(1.8 0 0 60ps 60ps 2ns 4ns)
-.tran 0.1p 10n
-.control 
-run  
-plot V(en)+6 V(enb)+4 V(in)+2 V(out)
-.endc
-.end

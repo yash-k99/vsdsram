@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1598073530
+timestamp 1598278778
 << nwell >>
 rect -13 -6 27 15
 << ntransistor >>
@@ -65,12 +65,15 @@ rect 14 -46 16 -44
 rect -2 -52 0 -50
 rect 14 -52 16 -50
 rect -2 -54 16 -52
-rect 10 -55 12 -54
+rect 10 -57 12 -54
 << polycontact >>
 rect 7 -11 11 -7
 rect 7 -18 11 -14
+rect 9 -61 13 -57
 << metal1 >>
+rect -13 8 -7 12
 rect -3 8 9 12
+rect 13 8 27 12
 rect -7 4 -3 8
 rect 9 4 13 8
 rect 1 -12 4 0
@@ -89,16 +92,26 @@ rect 9 -33 13 -29
 rect -3 -37 9 -33
 rect 24 -40 27 -16
 rect 9 -43 27 -40
-rect 9 -46 13 -43
+rect 1 -46 5 -45
 rect -13 -50 -7 -46
-rect 1 -55 5 -50
-rect 17 -55 21 -50
+rect 9 -46 13 -43
+rect 17 -51 21 -50
+rect -13 -60 9 -57
+rect 13 -60 27 -57
+<< m2contact >>
+rect -7 -37 -3 -33
+<< metal2 >>
+rect -13 -33 -9 12
+rect -13 -37 -7 -33
+rect -13 -61 -9 -37
+rect 1 -61 5 12
+rect 17 -61 21 12
 << labels >>
-rlabel metal1 3 10 3 10 5 vdd!
-rlabel metal1 2 -14 2 -14 1 q
-rlabel metal1 19 -14 19 -14 1 qb
-rlabel metal1 3 -35 3 -35 1 gnd!
-rlabel metal1 3 -51 3 -51 1 bl
-rlabel metal1 19 -51 19 -51 1 blb
-rlabel polysilicon 11 -53 11 -53 1 wl
+rlabel metal1 24 10 24 10 6 vdd!
+rlabel metal2 -11 -9 -11 -9 3 gnd!
+rlabel metal1 -6 -14 -6 -14 1 q
+rlabel metal1 24 -14 24 -14 7 qb
+rlabel metal2 3 -39 3 -39 1 bl
+rlabel metal2 19 -39 19 -39 1 blb
+rlabel metal1 8 -59 8 -59 1 wl
 << end >>
