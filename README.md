@@ -288,6 +288,6 @@ $ ngspice 1bitsram_write.spice
 * Philipp Gühring, Software Architect, LibreSilicon Assocation
 
 # Contact Information  
-* Yash Kumar, Undergraduate Student, Fr. Conceicao Rodrigues College of Engineering, Mumbai - laryash99@gmail.com
+* Yash Kumar, B.E. Electronics, Fr. Conceicao Rodrigues College of Engineering, Mumbai - laryash99@gmail.com
 * Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. - kunalghosh@gmail.com
 * Philipp Gühring, Software Architect, LibreSilicon Assocation - pg@futureware.at
