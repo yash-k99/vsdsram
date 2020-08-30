@@ -48,9 +48,9 @@ $ ngspice cell6T_write.cir
 
 ![](https://github.com/yash-k99/vsdsram/blob/master/Waveforms/Prelayout/cell_write.PNG)
 
-#### 6T Cell Stability
+### 6T Cell Stability
 
-##### **-> SNM Calculation**  
+#### **-> SNM Calculation**  
 The stability and writability of the cell are quantified by the hold margin, read margin and write margin which are determined by the static noise margin (SNM). It determines how much noise can be applied at the inputs of the two cross coupled inverters before a stable state is lost during hold or read operaring mode or a second stable state is created during write operation. 
 
 **1. Hold SNM**
@@ -89,7 +89,7 @@ $ ngspice writesnm.cir
 By fitting the smallest square between the two curves, we get  
 Write SNM = 1.065V
 
-##### **-> N-Curve**  
+#### **-> N-Curve**  
 
 N-curve provides the current flow information along with the voltage metrics which is equally important for an overall analysis of cell stability.    
 
