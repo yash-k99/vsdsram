@@ -2,7 +2,15 @@
 
 This project aims to develop a 1024 *32 (4kB) SRAM with supply voltage 1.8V and access time < 2.5ns. Circuits required as inputs to the OpenRAM compiler are designed and simulated.
 
-## Custom Cells Required for OpenRAM 
+# Table of Contents  
+- [Custom Cells Required for OpenRAM](#custom-cells-required-for-openram)  
+- [Prelayout Simulations](#prelayout-simulations)  
+- [Postlayout Simulations](#postlayout-simulations)  
+- [Future Work](#future-work)  
+- [Acknowledgements](#acknowledgements)  
+- [Contact Information](#contact-information)  
+
+# Custom Cells Required for OpenRAM 
 * SRAM Bit cell  
 * Sense Amplifier  
 * Write Driver  
@@ -253,8 +261,9 @@ $ ngspice 1bitsram_write.spice
 ![](https://github.com/yash-k99/sram/blob/master/Waveforms/Postlayout/1bit_write.PNG)
 
 
-# Author
-Yash Kumar
+# Future Work
+
+* Porting OSU018 technology to OpenRAM and adding the above created custom cells to it. 
 
 # Acknowledgements  
 * Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
