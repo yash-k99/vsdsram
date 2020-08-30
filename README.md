@@ -166,6 +166,8 @@ $  cd vsdsram/Simulation/Postlayout
 
 ### 1. 6T Cell
 
+![](https://github.com/yash-k99/vsdsram/blob/master/Layouts/cell6T.PNG)
+
 **-> Read Operation**  
 
 ```
@@ -184,6 +186,8 @@ $ ngspice cell6T_write.spice
 
 ### 2. Sense Amplifier
 
+![](https://github.com/yash-k99/vsdsram/blob/master/Layouts/senseamp.PNG)
+
 Run the netlist file using the following command:
 
 ``` 
@@ -193,6 +197,8 @@ $ ngspice senseamp.spice
 ![](https://github.com/yash-k99/sram/blob/master/Waveforms/Postlayout/senseamp.PNG)
 
 ### 3. Write Driver
+
+![](https://github.com/yash-k99/vsdsram/blob/master/Layouts/writedriver.PNG)
 
 Run the netlist file using the following command:
 
@@ -204,6 +210,8 @@ $ ngspice writedriver.spice
 
 ### 4. Tristate Buffer
 
+![](https://github.com/yash-k99/vsdsram/blob/master/Layouts/tristate.PNG)
+
 Run the netlist file using the following command:
 
 ```
@@ -214,6 +222,8 @@ $ ngspice tri.spice
 
 ### 5. Positive Edge Triggered DFF
 
+![](https://github.com/yash-k99/vsdsram/blob/master/Layouts/dff.PNG)
+
 Run the netlist file using the following command:
 
 ```
@@ -223,6 +233,8 @@ $ ngspice dff.spice
 ![](https://github.com/yash-k99/sram/blob/master/Waveforms/Postlayout/dff.PNG)
 
 ### 1-Bit SRAM  
+
+![](https://github.com/yash-k99/vsdsram/blob/master/Layouts/1bitsram.PNG)
 
 **-> Read Operation**
 
