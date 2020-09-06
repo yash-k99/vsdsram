@@ -284,7 +284,7 @@ $ ngspice 1bitsram_write.spice
 * Porting OSU018 technology to OpenRAM and adding the above created custom cells to it. 
 
 # Acknowledgements  
-* Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+* Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.
 * Philipp Gühring, Software Architect, LibreSilicon Assocation
 
 # Contact Information  
