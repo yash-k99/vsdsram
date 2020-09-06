@@ -1,93 +1,57 @@
-timestamp 1598281089
+timestamp 1599365516
 version 8.2
 tech scmos
 style TSMC0.18um(tsmc18)from:t11b
 scale 1000 1 10
 resistclasses 6700 7500 929000 929000 1 7700 7700 80 80 80 70 70 40
-use inv inv_0 1 0 9 0 1 21
-use nor nor_0 1 0 46 0 1 -4
-use inv inv_1 1 0 77 0 1 20
-use nor nor_1 1 0 85 0 1 -21
-use precharge precharge_0 -1 0 68 0 -1 -67
-node "m1_63_n70#" 0 48.16 63 -70 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 64 40 0 0 0 0 0 0 0 0
-node "m1_47_n70#" 0 48.16 47 -70 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 64 40 0 0 0 0 0 0 0 0
-node "din" 0 37.971 -9 15 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27 24 0 0 0 0 0 0 0 0 0 0
-node "m1_92_31#" 1 168.122 92 31 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 108 70 148 82 0 0 0 0 0 0 0 0
-node "m1_24_32#" 2 168.944 24 32 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 48 292 154 0 0 0 0 0 0 0 0
-node "m1_n5_32#" 4 269.042 -5 32 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36 34 628 322 0 0 0 0 0 0 0 0
-node "a_104_n48#" 43 390.135 104 -48 p 0 0 0 0 0 0 0 0 0 0 30 30 0 0 253 174 0 0 0 0 0 0 0 0 0 0
-node "bl" 9 38.112 63 -50 ndif 20 18 0 0 0 0 0 0 0 0 0 0 0 0 38 30 0 0 0 0 0 0 0 0 0 0
-node "a_60_n43#" 51 348.233 60 -43 pc 0 0 0 0 0 0 0 0 0 0 34 34 0 0 227 156 0 0 0 0 0 0 0 0 0 0
-node "blb" 9 65.928 45 -42 ndif 20 18 0 0 0 0 0 0 0 0 0 0 0 0 62 46 0 0 0 0 0 0 0 0 0 0
-node "a_38_n42#" 47 516.049 38 -42 ndc 40 36 0 0 0 0 0 0 0 0 0 0 0 0 149 126 1072 530 0 0 0 0 0 0 0 0
-node "wb" 16 199.283 65 -32 pc 0 0 0 0 0 0 0 0 0 0 28 22 0 0 28 22 28 22 516 266 0 0 0 0 0 0
-node "a_42_n35#" 49 173.684 42 -35 pc 0 0 0 0 0 0 0 0 0 0 34 34 0 0 80 48 0 0 0 0 0 0 0 0 0 0
-node "a_26_n15#" 26 328.733 26 -15 pc 0 0 0 0 0 0 0 0 0 0 22 22 0 0 223 154 0 0 0 0 0 0 0 0 0 0
-substrate "w_n1073741817_n1073741817#" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "a_38_n42#" "a_104_n48#" 22.556
-cap "a_26_n15#" "m1_24_32#" 50.048
-cap "a_60_n43#" "a_104_n48#" 219.972
-cap "wb" "m1_n5_32#" 26.816
-cap "m1_n5_32#" "din" 22.556
-cap "a_38_n42#" "blb" 132.803
-cap "m1_n5_32#" "m1_47_n70#" 31.376
-cap "a_26_n15#" "a_38_n42#" 41.238
-cap "a_38_n42#" "a_60_n43#" 118.778
-cap "wb" "a_104_n48#" 7.848
-cap "a_38_n42#" "bl" 132.312
-cap "a_42_n35#" "blb" 54.984
-cap "wb" "a_38_n42#" 98.236
-cap "a_60_n43#" "bl" 114.779
-cap "m1_92_31#" "a_104_n48#" 213.036
-cap "a_42_n35#" "wb" 49.548
-cap "m1_92_31#" "a_38_n42#" 130.822
-device mosfet nfet 61 -50 62 -49 2 4 "w_n1073741817_n1073741817#" "a_60_n43#" 4 0 "a_38_n42#" 4 0 "bl" 4 0
-device mosfet nfet 43 -42 44 -41 2 4 "w_n1073741817_n1073741817#" "a_42_n35#" 4 0 "a_38_n42#" 4 0 "blb" 4 0
-subcap "m1_63_n70#" -3.345
-subcap "a_60_n43#" -115.02
-cap "bl" "precharge_0/vdd!" 39.252
-cap "nor_0/out" "wb" 25.611
-cap "nor_0/out" "inv_0/gnd!" 119.787
-cap "blb" "precharge_0/vdd!" 38.834
-cap "wb" "inv_0/gnd!" 8.897
-cap "inv_0/out" "nor_0/vdd!" 233.682
-cap "bl" "inv_0/gnd!" 3.648
-cap "inv_0/out" "inv_0/gnd!" 13.746
-cap "a_60_n43#" "inv_0/gnd!" 96.222
-cap "blb" "inv_0/gnd!" 6.08
-cap "inv_1/out" "nor_1/out" -2.84217e-14
-cap "nor_1/out" "wb" 9.312
-cap "nor_1/vdd!" "nor_1/vdd!" 3.891
-cap "inv_1/out" "nor_1/vdd!" -2.84217e-14
-cap "inv_1/out" "wb" 3.8
-subcap "din" -20.163
-cap "inv_0/out" "inv_0/vdd!" -1.42109e-14
-subcap "m1_92_31#" -118.142
-merge "precharge_0/bl" "m1_63_n70#" -51.75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -22 0 0 0 0 0 0 0 0 0 0
-merge "m1_63_n70#" "bl"
-merge "nor_1/in2" "nor_0/in1" -52.5 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 -88 -48 0 0 0 0 0 0
+use nor nor_0 -1 0 20 0 1 61
+use inv inv_0 0 1 19 1 0 16
+use nor nor_1 -1 0 -17 0 -1 -2
+use inv inv_1 0 1 20 1 0 -8
+node "din" 0 24.063 14 -22 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 16 0 0 0 0 0 0 0 0 0 0
+node "a_n4_5#" 8 133.376 -4 5 pc 0 0 0 0 0 0 0 0 0 0 16 16 0 0 80 48 0 0 0 0 0 0 0 0 0 0
+node "wb" 182 448.164 -25 24 p 0 0 0 0 0 0 0 0 0 0 106 104 0 0 20 18 296 156 0 0 0 0 0 0 0 0
+node "a_33_49#" 9 225.863 33 49 pc 0 0 0 0 0 0 0 0 0 0 16 16 0 0 163 100 0 0 0 0 0 0 0 0 0 0
+node "a_n18_63#" 61 232.832 -18 63 p 0 0 0 0 0 0 0 0 0 0 40 40 0 0 92 54 0 0 0 0 0 0 0 0 0 0
+node "a_n36_47#" 104 333.241 -36 47 pc 0 0 0 0 0 0 0 0 0 0 62 62 0 0 127 90 0 0 0 0 0 0 0 0 0 0
+node "bl" 9 89.474 -16 65 ndif 20 18 0 0 0 0 0 0 0 0 0 0 0 0 40 28 36 26 0 0 0 0 0 0 0 0
+node "blb" 9 89.474 -30 65 ndif 20 18 0 0 0 0 0 0 0 0 0 0 0 0 40 28 36 26 0 0 0 0 0 0 0 0
+substrate "gnd" 0 0 -36 52 pw 40 36 16 16 0 0 0 0 876 162 0 0 0 0 104 60 0 0 0 0 0 0 0 0 0 0
+cap "a_n18_63#" "a_n36_47#" 7.554
+cap "wb" "a_n36_47#" 17.692
+cap "a_33_49#" "wb" 26.832
+device mosfet nfet -16 63 -15 64 2 4 "gnd" "a_n18_63#" 4 0 "gnd" 4 0 "bl" 4 0
+device mosfet nfet -30 63 -29 64 2 4 "gnd" "a_n36_47#" 4 0 "gnd" 4 0 "blb" 4 0
+subcap "din" -3.339
+subcap "a_n4_5#" -133.376
+subcap "wb" -156.184
+subcap "a_33_49#" -101.734
+subcap "a_n18_63#" -90.907
+subcap "a_n36_47#" -154.569
+subcap "bl" -82.19
+subcap "blb" -82.19
+cap "nor_0/in2" "gnd" 168.932
+cap "wb" "gnd" 136.57
+cap "nor_0/in2" "wb" 2.13163e-14
+cap "nor_1/out" "nor_1/vdd!" -7.10543e-15
+cap "inv_0/in" "gnd" 209.037
+cap "nor_0/in2" "inv_0/vdd!" 49.644
+cap "nor_0/out" "gnd" 1.42109e-14
+cap "nor_1/out" "gnd" 29.757
+merge "inv_1/out" "nor_1/in2" -144.676 0 0 0 0 0 0 0 0 0 0 0 -4 0 0 -12 -20 0 0 0 0 0 0 0 0 0 0
+merge "nor_1/in2" "inv_0/in"
+merge "inv_0/in" "a_n4_5#"
+merge "nor_1/in1" "nor_0/in1" -156.184 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "nor_0/in1" "wb"
-merge "nor_1/out" "a_60_n43#" -8.904 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0
-merge "precharge_0/w_n1073741817_n1073741817#" "precharge_0/gnd!" -128.44 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -54 -88 -48 0 0 0 0 0 0 0 0
-merge "precharge_0/gnd!" "nor_1/gnd!"
-merge "nor_1/gnd!" "inv_1/gnd!"
-merge "inv_1/gnd!" "nor_0/gnd!"
-merge "nor_0/gnd!" "inv_0/gnd!"
-merge "inv_0/gnd!" "a_38_n42#"
-merge "a_38_n42#" "w_n1073741817_n1073741817#"
-merge "inv_1/in" "nor_0/in2" -22.6 0 0 0 0 0 0 0 0 0 0 0 -4 0 0 0 -12 0 0 0 0 0 0 0 0 0 0
-merge "nor_0/in2" "inv_0/out"
-merge "inv_0/out" "a_26_n15#"
-merge "precharge_0/blb" "m1_47_n70#" -51.75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -22 0 0 0 0 0 0 0 0 0 0
-merge "m1_47_n70#" "blb"
-merge "inv_1/vdd!" "inv_0/vdd!" -71.093 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -48 0 0 0 0 0 0 0 0 0 0
-merge "inv_0/vdd!" "precharge_0/vdd!"
-merge "precharge_0/vdd!" "m1_n5_32#"
-merge "m1_n5_32#" "nor_0/vdd!"
-merge "nor_0/vdd!" "m1_24_32#"
-merge "m1_24_32#" "nor_1/vdd!"
-merge "nor_1/vdd!" "m1_92_31#"
-merge "nor_1/in1" "inv_1/out" -15.505 0 0 0 0 0 0 0 0 0 0 0 -4 0 0 1 -6 0 0 0 0 0 0 0 0 0 0
-merge "inv_1/out" "a_104_n48#"
-merge "inv_0/in" "din" -6.678 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0 0 0 0 0 0 0
-merge "nor_0/out" "a_42_n35#" -20.031 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0
+merge "inv_1/in" "din" -6.678 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0 0 0 0 0 0 0
+merge "inv_1/gnd!" "nor_1/gnd!" -3.97904e-13 0 0 0 0 0 0 0 0 -53 -164 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nor_1/gnd!" "inv_0/gnd!"
+merge "inv_0/gnd!" "nor_0/gnd!"
+merge "nor_0/gnd!" "gnd"
+merge "nor_1/out" "a_n36_47#" -50.343 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 -14 0 0 0 0 0 0 0 0 0 0
+merge "inv_1/comment_n9_n24#" "nor_1/comment_n13_n26#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nor_1/comment_n13_n26#" "inv_0/comment_n9_n24#"
+merge "inv_1/vdd!" "inv_0/vdd!" -1.13687e-13 0 0 0 0 0 -40 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_0/out" "nor_0/in2" -109.695 0 0 0 0 0 0 0 0 0 0 0 -4 0 0 -9 -12 0 0 0 0 0 0 0 0 0 0
+merge "nor_0/in2" "a_33_49#"
+merge "nor_0/out" "a_n18_63#" -8.904 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0

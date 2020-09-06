@@ -1,24 +1,25 @@
-timestamp 1598079838
+timestamp 1599365357
 version 8.2
 tech scmos
 style TSMC0.18um(tsmc18)from:t11b
 scale 1000 1 10
 resistclasses 6700 7500 929000 929000 1 7700 7700 80 80 80 70 70 40
+node "comment_n13_n26#" 0 0 -13 -26 bb 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "out" 50 222.738 0 -16 ndif 40 36 20 18 0 0 0 0 0 0 0 0 0 0 168 92 0 0 0 0 0 0 0 0 0 0
 node "temp" 11 -3.55271e-15 0 0 pdif 0 0 24 20 0 0 0 0 0 0 0 0 0 0 20 18 0 0 0 0 0 0 0 0 0 0
-node "in1" 169 200.29 6 -27 p 0 0 0 0 0 0 0 0 0 0 88 92 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "in1" 123 120.394 6 -26 p 0 0 0 0 0 0 0 0 0 0 64 68 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "in2" 135 140.368 -13 -10 p 0 0 0 0 0 0 0 0 0 0 70 74 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-node "vdd!" 1432 519.624 -13 -6 nw 16 16 20 18 672 106 0 0 0 0 0 0 0 0 160 88 0 0 0 0 0 0 0 0 0 0
-substrate "gnd!" 0 0 -7 -24 poc 40 36 16 16 0 0 0 0 0 0 0 0 0 0 80 48 0 0 0 0 0 0 0 0 0 0
-cap "vdd!" "out" 73.506
-cap "vdd!" "temp" 119.329
-cap "in1" "out" 16.876
-cap "out" "temp" 41.238
-cap "vdd!" "in2" 67.13
+node "vdd!" 1432 510.72 -13 -6 nw 16 16 20 18 672 106 0 0 0 0 0 0 0 0 48 32 0 0 0 0 0 0 0 0 0 0
+substrate "gnd!" 0 0 -13 -22 pw 40 36 16 16 0 0 0 0 665 112 0 0 0 0 80 48 0 0 0 0 0 0 0 0 0 0
+cap "out" "in1" 16.876
 cap "vdd!" "in1" 67.13
-cap "in2" "in1" 60.432
+cap "temp" "out" 41.238
+cap "temp" "vdd!" 64.3455
+cap "in1" "in2" 60.432
+cap "vdd!" "out" 32.268
+cap "vdd!" "in2" 67.13
 device mosfet nfet 6 -24 7 -23 2 4 "gnd!" "in1" 4 0 "gnd!" 4 0 "out" 4 0
 device mosfet nfet -2 -16 -1 -15 2 4 "gnd!" "in2" 4 0 "gnd!" 4 0 "out" 4 0
 device mosfet pfet 6 0 7 1 2 4 "vdd!" "in1" 4 0 "temp" 4 0 "out" 4 0
 device mosfet pfet -2 0 -1 1 2 4 "vdd!" "in2" 4 0 "vdd!" 4 0 "temp" 4 0
-subcap "out" -137.622
+subcap "out" -194.643

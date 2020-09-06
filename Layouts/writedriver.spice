@@ -1,66 +1,55 @@
 * SPICE3 file created from writedriver.ext - technology: scmos
 
-.option scale=0.1u
-
-M1000 inv_1/in din gnd gnd nfet w=4 l=2
-+  ad=0 pd=0 as=40 ps=36
-M1001 inv_1/in din vdd vdd pfet w=4 l=2
-+  ad=0 pd=0 as=0 ps=0
-M1002 inv_1/out inv_1/in gnd gnd nfet w=4 l=2
-+  ad=0 pd=0 as=0 ps=0
-M1003 inv_1/out inv_1/in vdd vdd pfet w=4 l=2
-+  ad=0 pd=0 as=0 ps=0
-M1004 nor_0/out wb gnd gnd nfet w=4 l=2
-+  ad=0 pd=0 as=0 ps=0
-M1005 nor_0/temp inv_1/in vdd vdd pfet w=4 l=2
-+  ad=0 pd=0 as=0 ps=0
-M1006 nor_0/out wb nor_0/temp vdd pfet w=4 l=2
-+  ad=0 pd=0 as=0 ps=0
-M1007 nor_0/out inv_1/in gnd gnd nfet w=4 l=2
-+  ad=0 pd=0 as=0 ps=0
-M1008 nor_1/out inv_1/out gnd gnd nfet w=4 l=2
-+  ad=0 pd=0 as=0 ps=0
-M1009 nor_1/temp wb vdd vdd pfet w=4 l=2
-+  ad=0 pd=0 as=0 ps=0
-M1010 nor_1/out inv_1/out nor_1/temp vdd pfet w=4 l=2
-+  ad=0 pd=0 as=0 ps=0
-M1011 nor_1/out wb gnd gnd nfet w=4 l=2
-+  ad=0 pd=0 as=0 ps=0
-M1012 bl gnd vdd vdd pfet w=3 l=2
-+  ad=0 pd=0 as=0 ps=0
-M1013 blb gnd vdd vdd pfet w=3 l=2
-+  ad=0 pd=0 as=0 ps=0
-M1014 bl nor_1/out gnd gnd nfet w=4 l=2
-+  ad=20 pd=18 as=0 ps=0
-M1015 blb nor_0/out gnd gnd nfet w=4 l=2
-+  ad=20 pd=18 as=0 ps=0
-C0 din vdd 0.15fF
-C1 nor_0/out nor_0/temp 0.04fF
-C2 nor_1/out nor_1/temp 0.04fF
-C3 din inv_1/in 0.05fF
-C4 nor_1/out vdd 0.07fF
-C5 nor_1/out inv_1/out 0.24fF
-C6 nor_1/temp vdd 0.12fF
-C7 nor_1/out wb 0.01fF
-C8 inv_1/out vdd 0.39fF
-C9 vdd inv_1/in 0.59fF
-C10 wb vdd 0.16fF
-C11 inv_1/out inv_1/in 0.05fF
-C12 inv_1/out wb 0.07fF
-C13 wb inv_1/in 0.06fF
-C14 bl nor_1/out 0.11fF
-C15 nor_0/out vdd 0.07fF
-C16 blb vdd 0.19fF
-C17 nor_0/temp vdd 0.12fF
-C18 bl vdd 0.19fF
-C19 wb nor_0/out 0.09fF
-C20 blb nor_0/out 0.05fF
-C21 blb gnd 0.29fF
-C22 bl gnd 0.32fF
-C23 nor_1/out gnd 0.45fF
-C24 inv_1/out gnd 0.41fF
-C25 wb gnd 0.31fF
-C26 nor_0/out gnd 0.29fF
-C27 inv_1/in gnd 0.38fF
-C28 vdd gnd 0.89fF
-C29 din gnd 0.02fF
+M1000 nor_0/in2 inv_0/in gnd gnd nfet w=0.4u l=0.2u
++  ad=0p pd=0u as=0.4p ps=3.6u
+M1001 nor_0/in2 inv_0/in vdd vdd pfet w=0.4u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1002 inv_0/in din gnd gnd nfet w=0.4u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1003 inv_0/in din vdd vdd pfet w=0.4u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1004 nor_0/out wb gnd gnd nfet w=0.4u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1005 nor_0/temp nor_0/in2 vdd vdd pfet w=0.4u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1006 nor_0/out wb nor_0/temp vdd pfet w=0.4u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1007 nor_0/out nor_0/in2 gnd gnd nfet w=0.4u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1008 nor_1/out wb gnd gnd nfet w=0.4u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1009 nor_1/temp inv_0/in vdd vdd pfet w=0.4u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1010 nor_1/out wb nor_1/temp vdd pfet w=0.4u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1011 nor_1/out inv_0/in gnd gnd nfet w=0.4u l=0.2u
++  ad=0p pd=0u as=0p ps=0u
+M1012 bl nor_0/out gnd gnd nfet w=0.4u l=0.2u
++  ad=0.2p pd=1.8u as=0p ps=0u
+M1013 blb nor_1/out gnd gnd nfet w=0.4u l=0.2u
++  ad=0.2p pd=1.8u as=0p ps=0u
+C0 vdd nor_1/out 0.03fF
+C1 nor_1/out nor_1/temp 0.04fF
+C2 vdd nor_1/temp 0.06fF
+C3 inv_0/in vdd 0.27fF
+C4 vdd nor_0/temp 0.06fF
+C5 nor_0/out nor_1/out 0.01fF
+C6 vdd din 0.13fF
+C7 inv_0/in din 0.05fF
+C8 vdd nor_0/out 0.03fF
+C9 nor_0/temp nor_0/out 0.04fF
+C10 nor_0/in2 wb 0.09fF
+C11 wb nor_1/out 0.03fF
+C12 vdd nor_0/in2 0.19fF
+C13 inv_0/in nor_0/in2 0.05fF
+C14 vdd wb 0.13fF
+C15 inv_0/in wb 0.06fF
+C16 nor_0/out wb 0.02fF
+C17 bl gnd 0.01fF
+C18 blb gnd 0.01fF
+C19 nor_1/out gnd 0.21fF
+C20 wb gnd 0.43fF
+C21 nor_0/out gnd 0.14fF
+C22 inv_0/in gnd 0.21fF
+C23 din gnd 0.02fF
+C24 nor_0/in2 gnd 0.29fF

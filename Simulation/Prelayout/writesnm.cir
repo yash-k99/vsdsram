@@ -12,10 +12,10 @@ M6 q2 vdd gnd gnd nfet L=0.2u W=0.4u
 V1 vdd gnd dc 1.8V
 V2 q1 gnd dc 1.8V
 V3 qb2 gnd dc 1.8V
-.dc V2 0 1.8 0.01 V3 0 1.8 0.01
+.dc V3 0 1.8 0.01 V2 0 1.8 0.01
 
 .control
 run
-plot V(qb1) vs V(q1) V(q2) vs V(qb2) 
+plot V(qb1) vs V(q1) V(qb2) vs V(q2) 
 .endc
 .END

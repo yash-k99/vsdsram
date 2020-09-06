@@ -22,8 +22,9 @@ M1 blb out1 gnd gnd nfet L=0.2u W=0.4u
 M2 bl out2 gnd gnd nfet L=0.2u W=0.4u
 .ends driver
 
-M1 bl gnd vdd vdd pfet L=0.2u W=0.2u
-M2 blb gnd vdd vdd pfet L=0.2u W=0.2u
+*Precharge circuit added for simulation purpose only
+M1 bl gnd vdd vdd pfet L=0.2u W=0.3u
+M2 blb gnd vdd vdd pfet L=0.2u W=0.3u
 
 V1 vdd gnd dc 1.8V
 V2 wb gnd pulse 0 1.8 0 60ps 60ps 2ns 4ns
