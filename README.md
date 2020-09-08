@@ -286,6 +286,7 @@ $ ngspice 1bitsram_write.spice
 # Acknowledgements  
 * Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.
 * Philipp Gühring, Software Architect, LibreSilicon Assocation
+* R. Timothy Edwards, Open Circuit Design
 
 # Contact Information  
 * Yash Kumar, B.E. Electronics, Fr. Conceicao Rodrigues College of Engineering, Mumbai - laryash99@gmail.com
